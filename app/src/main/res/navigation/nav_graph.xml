@@ -26,5 +26,11 @@
         android:label="fragment_onbo2"
         tools:layout="@layout/fragment_onbo2" >
 
+        <action
+            android:id="@+id/action_onboard2Fragment_to_onboard1Fragment"
+            app:destination="@id/onboard1Fragment"
+            app:enterAnim="@anim/slide_out_right"
+            app:exitAnim="@anim/slide_in_left" />
+
     </fragment>
 </navigation>
