@@ -23,8 +23,8 @@ class Onboard1Fragment {
         return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+    // override fun onDestroyView() {
+       // super.onDestroyView()
+        //_binding = null
+    //}
 }
