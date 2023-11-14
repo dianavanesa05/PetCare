@@ -66,12 +66,15 @@
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="404dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
         android:text="@string/task_recomm"
         android:textAppearance="@style/task_recomm"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/based_on_th"
@@ -79,11 +82,14 @@
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="444dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="2sp"
         android:text="@string/based_on_th"
         android:textAppearance="@style/based_on_th"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

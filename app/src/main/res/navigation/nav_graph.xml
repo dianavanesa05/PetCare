@@ -3,13 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/Onboard1Fragment">
+    app:startDestination="@id/onboard1Fragment">
 
     <fragment
-        android:id="@+id/Onboard1Fragment"
+        android:id="@+id/onboard1Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard1Fragment"
-        android:label="fragment_welcome"
+        android:label="fragment_onbo1"
         tools:layout="@layout/fragment_onbo1" >
+
+        <action
+            android:id="@+id/action_onboard1Fragment_to_onboard2Fragment"
+            app:destination="@id/onboard2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboard2Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard1Fragment"
+        android:label="fragment_onbo2"
+        tools:layout="@layout/fragment_onbo2" >
 
     </fragment>
 </navigation>
