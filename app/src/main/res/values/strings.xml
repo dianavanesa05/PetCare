@@ -7,4 +7,9 @@
     <string name="based_on_th">Based on the type of pet and breed, PetCare will recommend some</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="pereal_">PEREAL!</string>
+    <string name="pet_owner">80% of Pet owners have admitted they have once procrastinated or delayed taking care of their pets. By taking pictures to share to other pet families, users will be kept accountable while storing memories with their beloved animals
+</string>
+    <string name="community">Community Engagement</string>
+    <string name="this_data">This data retrieved will be used later for vet appointments and exchanged among the community.</string>
 </resources>

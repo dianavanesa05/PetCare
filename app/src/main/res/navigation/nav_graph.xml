@@ -17,6 +17,7 @@
             app:exitAnim="@anim/slide_out_left" />
     </fragment>
 
+
     <fragment
         android:id="@+id/onboard2Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard2Fragment"
@@ -25,7 +26,45 @@
         <action
             android:id="@+id/action_onboard2Fragment_to_onboard1Fragment"
             app:destination="@id/onboard1Fragment"
-            app:enterAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_onboard2Fragment_to_onboard3Fragment"
+            app:destination="@id/onboard3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/onboard3Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard3Fragment"
+        android:label="fragment_onbo3"
+        tools:layout="@layout/fragment_onbo3" >
+        <action
+            android:id="@+id/action_onboard3Fragment_to_onboard2Fragment"
+            app:destination="@id/onboard2Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_onboard3Fragment_to_onboard4Fragment"
+            app:destination="@id/onboard4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/onboard4Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard4Fragment"
+        android:label="fragment_onbo4"
+        tools:layout="@layout/fragment_onbo4" >
+        <action
+            android:id="@+id/action_onboard4Fragment_to_onboard3Fragment"
+            app:destination="@id/onboard3Fragment"
+            app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>
