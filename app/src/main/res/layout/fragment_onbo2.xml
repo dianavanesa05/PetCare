@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".onboarding.Onboard2Fragment">
 
 
     <ImageView
@@ -31,6 +32,7 @@
         android:id="@+id/eli6"
         android:layout_width="31dp"
         android:layout_height="31dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.744"
@@ -66,7 +68,7 @@
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="404dp"
+        android:layout_marginTop="400dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
         android:text="@string/task_recomm"
@@ -97,21 +99,75 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
-        android:text="Button"
+        android:text="@string/back"
+        android:background="@color/white"
+        android:textColor="@color/purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
-        android:text="Button"
+        android:text="@string/next"
+        android:background="@color/purple"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="23dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/status_bar_item_background" />
+
+    <ImageView
+        android:id="@+id/empty_bar"
+        android:layout_width="153dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="14dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/status_bar_item_app_background" />
+
+    <ImageView
+        android:id="@+id/empty_bar2"
+        android:layout_width="153dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="14dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/status_bar_item_app_background" />
+
+
+    <ImageView
+        android:id="@+id/empty_bar3"
+        android:layout_width="153dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="271dp"
+        android:layout_marginTop="14dp"
+        android:cropToPadding="false"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/status_bar_item_app_background" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

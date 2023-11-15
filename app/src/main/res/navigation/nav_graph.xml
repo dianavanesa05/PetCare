@@ -10,27 +10,22 @@
         android:name="com.csc211.petcare.onboarding.Onboard1Fragment"
         android:label="fragment_onbo1"
         tools:layout="@layout/fragment_onbo1" >
-
         <action
             android:id="@+id/action_onboard1Fragment_to_onboard2Fragment"
             app:destination="@id/onboard2Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
-
-
     </fragment>
 
     <fragment
         android:id="@+id/onboard2Fragment"
-        android:name="com.csc211.petcare.onboarding.Onboard1Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard2Fragment"
         android:label="fragment_onbo2"
         tools:layout="@layout/fragment_onbo2" >
-
         <action
             android:id="@+id/action_onboard2Fragment_to_onboard1Fragment"
             app:destination="@id/onboard1Fragment"
-            app:enterAnim="@anim/slide_out_right"
-            app:exitAnim="@anim/slide_in_left" />
-
+            app:enterAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>

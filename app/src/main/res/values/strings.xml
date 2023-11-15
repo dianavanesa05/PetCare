@@ -5,4 +5,6 @@
     <string name="acc">I already have an account</string>
     <string name="task_recomm">Task Recommendation Feature</string>
     <string name="based_on_th">Based on the type of pet and breed, PetCare will recommend some</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
 </resources>
