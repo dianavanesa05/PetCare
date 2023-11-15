@@ -68,8 +68,14 @@
             app:exitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_onboard4Fragment_to_onboard5Fragment"
-            app:destination="@id/onboard5Fragment" />
+            app:destination="@id/onboard5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
+
+
+
+
     <fragment
         android:id="@+id/onboard5Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard5Fragment"
@@ -77,6 +83,8 @@
         tools:layout="@layout/fragment_onbo5" >
         <action
             android:id="@+id/action_onboard5Fragment_to_onboard4Fragment"
-            app:destination="@id/onboard4Fragment" />
+            app:destination="@id/onboard4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
     </fragment>
 </navigation>
