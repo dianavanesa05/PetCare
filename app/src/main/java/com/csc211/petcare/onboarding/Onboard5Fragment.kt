@@ -7,24 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
-import com.csc211.petcare.databinding.FragmentOnbo4Binding
+import com.csc211.petcare.databinding.FragmentOnbo5Binding
 
-class Onboard4Fragment : Fragment() {
-    private var _binding: FragmentOnbo4Binding? = null
+class Onboard5Fragment : Fragment() {
+    private var _binding: FragmentOnbo5Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentOnbo4Binding.inflate(inflater, container, false)
+        _binding = FragmentOnbo5Binding.inflate(inflater, container, false)
         val view = binding.root
         binding.backButton.setOnClickListener {
-            findNavController().navigate(R.id.action_onboard5Fragment_to_onboard4Fragment)
-        }
-
-        binding.nextButton.setOnClickListener {
-            findNavController().navigate(R.id.action_onboard4Fragment_to_onboard5Fragment)
+            findNavController().navigate(R.id.action_onboard4Fragment_to_onboard3Fragment)
         }
 
         return view
