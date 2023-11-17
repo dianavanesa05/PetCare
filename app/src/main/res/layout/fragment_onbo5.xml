@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.Onboard5Fragment">
+    tools:context=".onboarding.Onboard5Fragment"
+   >
+
 
     <TextView
         android:id="@+id/whatemail"
-        android:layout_width="237dp"
-        android:layout_height="42dp"
+        android:layout_width="326dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="144dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
         android:text="@string/what_your"
         android:textAppearance="@style/task_recomm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,17 +31,16 @@
         android:layout_height="51dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="7dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="200dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="2sp"
         android:text="@string/this_data"
         android:textAppearance="@style/based_on_th"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/back_button"
@@ -70,18 +72,33 @@
         android:id="@+id/email"
         android:layout_width="345dp"
         android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
         android:background="@color/light_purple"
         android:drawablePadding="8dp"
         android:hint="Email:"
         android:inputType="textEmailAddress"
-        android:textAppearance="@style/based_on_th"
         android:padding="8dp"
+        android:textAppearance="@style/based_on_th"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parag2" />
 
+    <EditText
+        android:id="@+id/name_Input"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_purple"
+        android:drawablePadding="8dp"
+        android:hint="First Name:"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textAppearance="@style/based_on_th"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parag2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

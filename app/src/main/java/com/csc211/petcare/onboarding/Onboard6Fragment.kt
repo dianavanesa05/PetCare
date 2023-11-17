@@ -8,27 +8,28 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo5Binding
+import com.csc211.petcare.databinding.FragmentOnbo6Binding
 
-class Onboard5Fragment : Fragment() {
-    private var _binding: FragmentOnbo5Binding? = null
+class Onboard6Fragment : Fragment() {
+    private var _binding: FragmentOnbo6Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentOnbo5Binding.inflate(inflater, container, false)
+        _binding = FragmentOnbo6Binding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.nameInput
-        binding.backButton.setOnClickListener {
-            findNavController().navigate(R.id.action_onboard5Fragment_to_onboard4Fragment)
-        }
-        binding.nextButton.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("userName", binding.nameInput.text.toString())
-            findNavController().navigate(R.id.action_onboard5Fragment_to_onboard6Fragment, bundle)
+        val userName = arguments?.getString("userName")
+        binding.hiMessage.text = "Hi $userName !"
 
+        binding.backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_onboard6Fragment_to_onboard5Fragment)
+        }
+
+        binding.backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_onboard6Fragment_to_onboard5Fragment)
         }
 
         return view

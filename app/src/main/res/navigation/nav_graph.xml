@@ -86,5 +86,24 @@
             app:destination="@id/onboard4Fragment"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_onboard5Fragment_to_onboard6Fragment"
+            app:destination="@id/onboard6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"  />
     </fragment>
+
+
+    <fragment
+        android:id="@+id/onboard6Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard6Fragment"
+        android:label="fragment_onbo6"
+        tools:layout="@layout/fragment_onbo6" >
+        <action
+            android:id="@+id/action_onboard6Fragment_to_onboard5Fragment"
+            app:destination="@id/onboard5Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
+
 </navigation>

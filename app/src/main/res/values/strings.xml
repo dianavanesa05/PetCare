@@ -8,9 +8,14 @@
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="pereal_">PEREAL!</string>
-    <string name="pet_owner">80% of Pet owners have admitted they have once procrastinated or delayed taking care of their pets. By taking pictures to share to other pet families, users will be kept accountable while storing memories with their beloved animals
+    <string name="pet_owner">80% of Pet owners have admitted they have once procrastinated or delayed taking care of their pets. By taking pictures to share to other pet families, users will be kept accountable while storing memories with their beloved animals.
 </string>
     <string name="community">Community Engagement</string>
     <string name="this_data">This data retrieved will be used later for vet appointments and exchanged among the community.</string>
-    <string name="what_your">What\'s your email?</string>
+    <string name="what_your">What\'s your First Name and Email?</string>
+    <string name="available">The app is only available to pet owners with dogs and cats.</string>
+    <string name="Dog">Dogs</string>
+    <string name="Cat">Cats</string>
+    <string name="welcome">Welcome to the world of pet parents! Choose your starter!</string>
+
 </resources>
