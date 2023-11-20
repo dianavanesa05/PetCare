@@ -17,5 +17,16 @@
     <string name="Dog">Dogs</string>
     <string name="Cat">Cats</string>
     <string name="welcome">Welcome to the world of pet parents! Choose your starter!</string>
-
+    <string name="choose">Choose the breed:</string>
+    <string name="french_dog">French bulldog</string>
+    <string name="labrador_dog">Labrador retriever</string>
+    <string name="golden_dog">Golden retriever</string>
+    <string name="german_dog">German shepherd</string>
+    <string name="poodle_dog">Poodles</string>
+    <string name="other">Other</string>
+    <string name="persian_cat">Persian cat</string>
+    <string name="bengal_cat">Bengal cat</string>
+    <string name="siamese_cat">Siamese</string>
+    <string name="maine_cat">Maine Coon</string>
+    <string name="British_cat">British Shorthair</string>
 </resources>
