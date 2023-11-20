@@ -29,4 +29,18 @@
     <string name="siamese_cat">Siamese</string>
     <string name="maine_cat">Maine Coon</string>
     <string name="British_cat">British Shorthair</string>
+    <string name="what_pet_name">What\'s your pet\'s name?</string>
+    <string name="idk">I Don\'t Know</string>
+    <string name="birthday">What\'s their birthday?</string>
+    <string name="what_gender">What\'s their gender ?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="unknown">Unknown</string>
+    <string name="upload">Upload a profile pic</string>
+    <string name="skip">Skip</string>
+    <string name="choose_image">Choose Image</string>
+
+
+
+
 </resources>

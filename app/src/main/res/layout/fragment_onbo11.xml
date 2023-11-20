@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.Onboard11Fragment">
+
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="318dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/what_gender"
+        android:textAppearance="@style/task_recomm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/parag3"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="172dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/available"
+        android:textAppearance="@style/based_on_th"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="303dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/light_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioUnknown"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="@string/unknown" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="305dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="#6750A4"
+        android:clipToOutline="true"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:viewportWidth="327"
+        android:viewportHeight="40"
+        app:layout_constraintBottom_toTopOf="@+id/idkbutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idkbutton"
+        android:layout_width="305dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="132dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="@color/white"
+        android:clipToOutline="true"
+        android:text="@string/idk"
+        android:textColor="@color/purple"
+        android:viewportWidth="327"
+        android:viewportHeight="40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

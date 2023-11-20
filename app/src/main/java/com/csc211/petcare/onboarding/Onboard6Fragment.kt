@@ -36,9 +36,9 @@ class Onboard6Fragment : Fragment() {
 
             if (selectedImageTag != null) {
                 val action = if (selectedImageTag == "dog") {
-                    R.id.action_onboard6Fragment_to_onboard7Fragment
-                } else {
                     R.id.action_onboard6Fragment_to_onboard8Fragment
+                } else {
+                    R.id.action_onboard6Fragment_to_onboard7Fragment
                 }
                 findNavController().navigate(action)
             } else {

@@ -59,13 +59,14 @@
         android:layout_marginEnd="240dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
         android:id="@+id/cat1_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="80dp"
         android:text="@string/persian_cat"
         android:textColor="@color/black"
@@ -82,13 +83,14 @@
         android:layout_marginEnd="244dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
         android:id="@+id/cat2_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="228dp"
         android:text="@string/bengal_cat"
         android:textColor="@color/black"
@@ -105,13 +107,14 @@
         android:layout_marginEnd="244dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
         android:id="@+id/cat3_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="368dp"
         android:text="@string/British_cat"
         android:textColor="@color/black"
@@ -128,13 +131,14 @@
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
         android:id="@+id/cat4_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="275dp"
+        android:layout_marginStart="250dp"
         android:layout_marginTop="80dp"
         android:text="@string/maine_cat"
         android:textColor="@color/black"
@@ -151,13 +155,14 @@
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
         android:id="@+id/cat5_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
+        android:layout_marginStart="260dp"
         android:layout_marginTop="228dp"
         android:text="@string/siamese_cat"
         android:textColor="@color/black"
@@ -167,20 +172,21 @@
         app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
 
     <ImageView
-        android:id="@+id/dog6_view"
+        android:id="@+id/cat6_view"
         android:layout_width="132dp"
         android:layout_height="100dp"
         android:layout_marginTop="324dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place" />
+        app:srcCompat="@drawable/image_place"
+        android:background="@drawable/image_border" />
 
     <TextView
-        android:id="@+id/dog6_text"
+        android:id="@+id/cat6_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
+        android:layout_marginStart="272dp"
         android:layout_marginTop="368dp"
         android:text="@string/other"
         android:textColor="@color/black"
