@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo12Binding
 
@@ -28,12 +29,12 @@ class Onboard12Fragment : Fragment() {
         binding.parag3.text = getString(R.string.available)
 
         binding.nextbutton.setOnClickListener {
-
+            findNavController().navigate(R.id.action_onboard12Fragment_to_onboard13Fragment)
 
         }
 
         binding.skipbutton.setOnClickListener {
-
+            findNavController().navigate(R.id.action_onboard12Fragment_to_onboard13Fragment)
 
         }
 

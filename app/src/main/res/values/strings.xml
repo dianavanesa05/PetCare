@@ -38,7 +38,9 @@
     <string name="unknown">Unknown</string>
     <string name="upload">Upload a profile pic</string>
     <string name="skip">Skip</string>
+    <string name="go">Continue</string>
     <string name="choose_image">Choose Image</string>
+    <string name="alright_you">Alright! You\'re all set. Welcome to the world of pet parents!</string>
 
 
 

@@ -161,8 +161,13 @@
         tools:layout="@layout/fragment_onbo9" >
         <action
             android:id="@+id/action_onboard9Fragment_to_onboard10Fragment"
-            app:destination="@id/onboard10Fragment" />
+            app:destination="@id/onboard10Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
+
+
+
     <fragment
         android:id="@+id/onboard10Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard10Fragment"
@@ -170,8 +175,12 @@
         tools:layout="@layout/fragment_onbo10" >
         <action
             android:id="@+id/action_onboard10Fragment_to_onboard11Fragment"
-            app:destination="@id/onboard11Fragment" />
+            app:destination="@id/onboard11Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
+
+
     <fragment
         android:id="@+id/onboard11Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard11Fragment"
@@ -179,12 +188,39 @@
         tools:layout="@layout/fragment_onbo11" >
         <action
             android:id="@+id/action_onboard11Fragment_to_onboard12Fragment"
-            app:destination="@id/onboard12Fragment" />
+            app:destination="@id/onboard12Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
+
+
     <fragment
         android:id="@+id/onboard12Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard12Fragment"
         android:label="fragment_onbo12"
-        tools:layout="@layout/fragment_onbo12" />
+        tools:layout="@layout/fragment_onbo12" >
+        <action
+            android:id="@+id/action_onboard12Fragment_to_onboard13Fragment"
+            app:destination="@id/onboard13Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/onboard13Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard13Fragment"
+        android:label="Onboard13Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left">
+        <action
+            android:id="@+id/action_onboard13Fragment_to_onboard14Fragment"
+            app:destination="@id/onboard14Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboard14Fragment"
+        android:name="com.csc211.petcare.onboarding.Onboard14Fragment"
+        android:label="fragment_onbo14"
+        tools:layout="@layout/fragment_onbo14" />
 
 </navigation>

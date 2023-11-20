@@ -61,7 +61,7 @@
         android:layout_marginEnd="1dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
-        android:text="@string/available"
+        android:text="@string/welcome"
         android:textAppearance="@style/task_recomm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.292"
