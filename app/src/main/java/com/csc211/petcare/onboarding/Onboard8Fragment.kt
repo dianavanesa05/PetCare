@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo6Binding
@@ -14,6 +15,7 @@ class Onboard8Fragment : Fragment() {
     private var _binding: FragmentOnbo8Binding? = null
     private val binding get() = _binding!!
 
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     private var selectedCat1 = false
     private var selectedCat2 = false
@@ -69,25 +71,15 @@ class Onboard8Fragment : Fragment() {
     }
 
     private fun onImageClicked(view: View, tag: String) {
-        // Reset the border for all images
-        binding.cat1View.isSelected = false
-        binding.cat2View.isSelected = false
-        binding.cat3View.isSelected = false
-        binding.cat4View.isSelected = false
-        binding.cat5View.isSelected = false
-        binding.cat6View.isSelected = false
-
-
         view.isSelected = true
 
-
         when (tag) {
-            "dog1" -> selectedCat1 = true
-            "dog2" -> selectedCat2 = true
-            "dog3" -> selectedCat3 = true
-            "dog4" -> selectedCat4 = true
-            "dog5" -> selectedCat5 = true
-            "dog6" -> selectedCat6 = true
+            "cat1" -> sharedViewModel.selectedCat = getString(R.string.persian_cat)
+            "cat2" -> sharedViewModel.selectedCat = getString(R.string.bengal_cat)
+            "cat3" -> sharedViewModel.selectedCat = getString(R.string.British_cat)
+            "cat4" -> sharedViewModel.selectedCat = getString(R.string.maine_cat)
+            "cat5" -> sharedViewModel.selectedCat = getString(R.string.siamese_cat)
+            "cat6" -> sharedViewModel.selectedCat = getString(R.string.other)
 
         }
     }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo7Binding
@@ -12,6 +13,8 @@ import com.csc211.petcare.databinding.FragmentOnbo7Binding
 class Onboard7Fragment : Fragment() {
     private var _binding: FragmentOnbo7Binding? = null
     private val binding get() = _binding!!
+
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     private var selectedDog1 = false
     private var selectedDog2 = false
@@ -68,25 +71,15 @@ class Onboard7Fragment : Fragment() {
     }
 
     private fun onImageClicked(view: View, tag: String) {
-        // Reset the border for all images
-        binding.dog1View.isSelected = false
-        binding.dog2View.isSelected = false
-        binding.dog3View.isSelected = false
-        binding.dog4View.isSelected = false
-        binding.dog5View.isSelected = false
-        binding.dog6View.isSelected = false
-
-
         view.isSelected = true
 
-
         when (tag) {
-            "dog1" -> selectedDog1 = true
-            "dog2" -> selectedDog2 = true
-            "dog3" -> selectedDog3 = true
-            "dog4" -> selectedDog4 = true
-            "dog5" -> selectedDog5 = true
-            "dog6" -> selectedDog6 = true
+            "dog1" -> sharedViewModel.selectedDog = getString(R.string.german_dog)
+            "dog2" -> sharedViewModel.selectedDog = getString(R.string.golden_dog)
+            "dog3" -> sharedViewModel.selectedDog = getString(R.string.labrador_dog)
+            "dog4" -> sharedViewModel.selectedDog = getString(R.string.french_dog)
+            "dog5" -> sharedViewModel.selectedDog = getString(R.string.poodle_dog)
+            "dog6" -> sharedViewModel.selectedDog = getString(R.string.other)
 
         }
     }

@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.Onboard6Fragment">
+    tools:context=".onboarding.Onboard14Fragment">
 
 
-    <TextView
-        android:id="@+id/welcome_message"
-        android:layout_width="254dp"
-        android:layout_height="158dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginEnd="1dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="5sp"
-        android:text="@string/alright_you"
-        android:textAppearance="@style/task_recomm"
-        android:textSize="25sp"
+    <ImageView
+        android:id="@+id/profileView"
+        android:layout_width="169dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="232dp"
+        android:src="@drawable/ic_placeholder_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/finish_view"
-        android:layout_width="210dp"
-        android:layout_height="287dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginBottom="432dp"
-        android:background="@drawable/image_border"
-        android:rotation="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/image_place" />
-
-    <ImageView
-        android:id="@+id/eli1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="568dp"
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="52dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="@color/light_purple"
+        android:clipToOutline="true"
+        android:hint="name"
+        android:textAppearance="@style/task_recomm"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/eli2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="568dp"
+    <TextView
+        android:id="@+id/breedView"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="@color/light_purple"
+        android:clipToOutline="true"
+        android:hint="breed"
+        android:textAppearance="@style/task_recomm"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
-        app:layout_constraintStart_toEndOf="@+id/eli1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
+        app:layout_constraintTop_toBottomOf="@+id/nameView" />
 
-    <ImageView
-        android:id="@+id/eli3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="568dp"
+    <TextView
+        android:id="@+id/birthdayView"
+        android:layout_width="108dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="@color/light_purple"
+        android:clipToOutline="true"
+        android:hint="birthday"
+        android:textAppearance="@style/task_recomm"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/genderView"
+        app:layout_constraintTop_toBottomOf="@+id/breedView" />
+
+    <TextView
+        android:id="@+id/genderView"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:width="327dp"
+        android:height="40dp"
+        android:background="@color/light_purple"
+        android:clipToOutline="true"
+        android:hint="gender"
+        android:textAppearance="@style/task_recomm"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toEndOf="@+id/eli2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
+        app:layout_constraintTop_toBottomOf="@+id/breedView" />
 
     <Button
         android:id="@+id/nextbutton"
@@ -77,19 +89,17 @@
         android:layout_height="38dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="131dp"
         android:width="327dp"
         android:height="40dp"
         android:background="#6750A4"
         android:clipToOutline="true"
-        android:text="@string/go"
+        android:text="@string/next"
         android:textColor="@color/white"
         android:viewportWidth="327"
         android:viewportHeight="40"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eli2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

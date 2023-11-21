@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo11Binding
@@ -14,6 +15,8 @@ import com.csc211.petcare.databinding.FragmentOnbo11Binding
 class Onboard11Fragment : Fragment() {
     private var _binding: FragmentOnbo11Binding? = null
     private val binding get() = _binding!!
+
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,14 +26,13 @@ class Onboard11Fragment : Fragment() {
         val view = binding.root
 
         binding.nextbutton.setOnClickListener {
-
             val genderRadioGroup = view.findViewById<RadioGroup>(R.id.genderRadioGroup)
             val selectedGenderId = genderRadioGroup.checkedRadioButtonId
 
             if (selectedGenderId != -1) {
                 val selectedRadioButton = view.findViewById<RadioButton>(selectedGenderId)
                 val selectedGender = selectedRadioButton.text.toString()
-
+                sharedViewModel.selectedGender = selectedGender
             }
 
             findNavController().navigate(R.id.action_onboard11Fragment_to_onboard12Fragment)

@@ -15,27 +15,16 @@ class Onboard14Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentOnbo14Binding.inflate(inflater, container, false)
-        return binding.root
-    }
+        val view = binding.root
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        binding.nextbutton.setOnClickListener {
 
-        val petName = arguments?.getString("petName") ?: "NA"
-        val petType = arguments?.getString("petType") ?: "NA"
-        val breed = arguments?.getString("breed") ?: "NA"
-        val birthday = arguments?.getString("birthday") ?: "NA"
-        val gender = arguments?.getString("gender") ?: "NA"
-        val imageUploaded = arguments?.getString("imageUploaded") ?: "NA"
+        }
 
-        binding.nameTextView.text = "Name/Nickname: $petName"
-        binding.petTypeTextView.text = "Dog or Cat: $petType"
-        binding.breedTextView.text = "Breed: $breed"
-        binding.birthdayTextView.text = "Birthday: $birthday"
-        binding.genderTextView.text = "Gender: $gender"
-        binding.imageTextView.text = "Picture Uploaded: $imageUploaded"
+
+        return view
     }
 
     override fun onDestroyView() {
@@ -43,4 +32,3 @@ class Onboard14Fragment : Fragment() {
         _binding = null
     }
 }
-
