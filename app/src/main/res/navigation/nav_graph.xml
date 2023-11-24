@@ -229,4 +229,16 @@
         android:label="fragment_community1"
         tools:layout="@layout/fragment_community1" />
 
+    <fragment
+        android:id="@+id/Community2Fragment"
+        android:name="com.csc211.petcare.community.Community2Fragment"
+        android:label="fragment_community2"
+        tools:layout="@layout/fragment_community2" />
+
+    <fragment
+        android:id="@+id/Community3Fragment"
+        android:name="com.csc211.petcare.community.Community3Fragment"
+        android:label="fragment_community3"
+        tools:layout="@layout/fragment_community3" />
+
 </navigation>
