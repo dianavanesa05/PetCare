@@ -41,8 +41,8 @@
     <string name="go">Continue</string>
     <string name="choose_image">Choose Image</string>
     <string name="alright_you">Alright! You\'re all set. Welcome to the world of pet parents!</string>
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
