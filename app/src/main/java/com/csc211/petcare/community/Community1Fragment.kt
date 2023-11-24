@@ -17,7 +17,7 @@ class Community1Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = Community1Fragment.inflate(inflater, container, false)
+        _binding = FragmentCommunity1Binding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
