@@ -223,4 +223,10 @@
         android:label="fragment_onbo14"
         tools:layout="@layout/fragment_onbo14" />
 
+    <fragment
+        android:id="@+id/Community1Fragment"
+        android:name="com.csc211.petcare.community.Community1Fragment"
+        android:label="fragment_community1"
+        tools:layout="@layout/fragment_community1" />
+
 </navigation>

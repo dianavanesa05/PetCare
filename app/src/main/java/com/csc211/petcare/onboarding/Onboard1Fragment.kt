@@ -26,7 +26,7 @@ class Onboard1Fragment : Fragment() {
     }
 
     override fun onDestroyView() {
-   super.onDestroyView()
-     _binding = null
+        super.onDestroyView()
+        _binding = null
     }
 }
