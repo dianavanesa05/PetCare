@@ -19,6 +19,9 @@ class Community1Fragment : Fragment() {
     ): View {
         _binding = FragmentCommunity1Binding.inflate(inflater, container, false)
         val view = binding.root
+        binding.ellipse30.setOnClickListener{
+            findNavController().navigate(R.id.action_Community1Fragment_to_Community2Fragment)
+        }
         return view
     }
 

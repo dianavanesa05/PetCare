@@ -227,7 +227,13 @@
         android:id="@+id/Community1Fragment"
         android:name="com.csc211.petcare.community.Community1Fragment"
         android:label="fragment_community1"
-        tools:layout="@layout/fragment_community1" />
+        tools:layout="@layout/fragment_community1">
+        <action
+            android:id="@+id/action_Community1Fragment_to_Community2Fragment"
+            app:destination="@id/Community2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/Community2Fragment"

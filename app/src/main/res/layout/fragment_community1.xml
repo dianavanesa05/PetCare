@@ -12,29 +12,11 @@
         android:layout_height="54dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/comframe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
-
-        <TextView
-            android:id="@+id/tracker"
-            android:layout_width="114dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:gravity="center"
-            android:text="@string/tracker"
-            android:textAppearance="@style/tracker"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
 
         <RelativeLayout
             android:id="@+id/ellipse_30"
