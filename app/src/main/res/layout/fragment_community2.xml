@@ -80,7 +80,8 @@
             <RelativeLayout
                 android:id="@+id/segment_1"
                 android:layout_width="64dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp">
 
                 <RelativeLayout
                     android:id="@+id/icon_contai"
@@ -126,7 +127,8 @@
                 android:id="@+id/segment_2"
                 android:layout_width="64dp"
                 android:layout_height="match_parent"
-                android:layout_toRightOf="@id/segment_1">
+                android:layout_toRightOf="@id/segment_1"
+                android:layout_marginEnd="15dp">
 
                 <RelativeLayout
                     android:id="@+id/paw_icon"
@@ -181,6 +183,7 @@
                 android:layout_width="64dp"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@id/mdaddcircle"
+                android:layout_marginStart="15dp"
                 >
 
                 <RelativeLayout
@@ -227,7 +230,8 @@
                 android:id="@+id/segment_5"
                 android:layout_width="64dp"
                 android:layout_height="match_parent"
-                android:layout_toRightOf="@id/segment_4">
+                android:layout_toRightOf="@id/segment_4"
+                android:layout_marginStart="15dp">
 
                 <RelativeLayout
                     android:id="@+id/profile_icon"

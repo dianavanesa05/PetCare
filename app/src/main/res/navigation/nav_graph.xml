@@ -247,4 +247,27 @@
         android:label="fragment_community3"
         tools:layout="@layout/fragment_community3" />
 
+    <fragment
+        android:id="@+id/Discover1Fragment"
+        android:name="com.csc211.petcare.discover.Discover1Fragment"
+        android:label="fragment_discover1"
+        tools:layout="@layout/fragment_discover1" />
+
+    <fragment
+        android:id="@+id/Discover2Fragment"
+        android:name="com.csc211.petcare.discover.Discover2Fragment"
+        android:label="fragment_discover2"
+        tools:layout="@layout/fragment_discover2" />
+
+    <fragment
+        android:id="@+id/Discover3Fragment"
+        android:name="com.csc211.petcare.discover.Discover3Fragment"
+        android:label="fragment_discover3"
+        tools:layout="@layout/fragment_discover3" />
+
+    <fragment
+        android:id="@+id/Discover4Fragment"
+        android:name="com.csc211.petcare.discover.Discover4Fragment"
+        android:label="fragment_discover4"
+        tools:layout="@layout/fragment_discover4" />
 </navigation>

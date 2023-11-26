@@ -4,82 +4,107 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".community.Community3Fragment">
+    tools:context=".discover.Discover1Fragment">
+
+    <RelativeLayout
+        android:id="@+id/framer"
+        android:layout_width="328dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/explore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <RelativeLayout
+            android:id="@+id/mdhelp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/mdhelp"/>
+
+        <RelativeLayout
+            android:id="@+id/group"
+            android:layout_width="124dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp">
+
+            <TextView
+                android:id="@+id/blogs"
+                android:layout_width="42dp"
+                android:layout_height="24dp"
+                android:text="@string/blogs"
+                android:textAppearance="@style/blogs"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/videos"
+                android:layout_width="51dp"
+                android:layout_height="24dp"
+                android:text="@string/videos"
+                android:textAppearance="@style/videos"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/search"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/explore"
+        android:layout_width="45dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/explore"
+        android:textAppearance="@style/explore"
+        app:layout_constraintBottom_toTopOf="@+id/frame_26080"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RelativeLayout
         android:id="@+id/frame_26080"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
+        android:layout_width="344dp"
+        android:layout_height="91dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/nearframe"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/longframe"
         android:clipToOutline="true"
-        app:layout_constraintBottom_toTopOf="@+id/frame3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp">
-
-        <RelativeLayout
-            android:id="@+id/ellipse_30"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="317dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginBottom="9dp"
-            android:background="@drawable/ellipse">
-
-            <RelativeLayout
-                android:id="@+id/bimessagero"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/bimessageroundeddots"
-                tools:layout_editor_absoluteX="379dp"
-                tools:layout_editor_absoluteY="51dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:layout_marginStart="3dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                />
-        </RelativeLayout>
-    </RelativeLayout>
+        app:layout_constraintBottom_toTopOf="@+id/feed_cards"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RelativeLayout
-        android:id="@+id/frame3"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
-        app:layout_constraintBottom_toTopOf="@+id/frame2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-    <RelativeLayout
-        android:id="@+id/frame2"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
-        app:layout_constraintBottom_toTopOf="@+id/frame1"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-    <RelativeLayout
-        android:id="@+id/frame1"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
+        android:id="@+id/feed_cards"
+        android:layout_width="336dp"
+        android:layout_height="450dp"
+        android:background="@drawable/feed"
+        android:elevation="4dp"
         app:layout_constraintBottom_toTopOf="@+id/navigation_"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:id="@+id/navigation_"

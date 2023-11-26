@@ -4,82 +4,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".community.Community3Fragment">
+    tools:context=".discover.Discover4Fragment">
 
     <RelativeLayout
-        android:id="@+id/frame_26080"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/nearframe"
-        android:clipToOutline="true"
-        app:layout_constraintBottom_toTopOf="@+id/frame3"
+        android:id="@+id/pexels_anth"
+        android:layout_width="412dp"
+        android:layout_height="740dp"
+        android:background="@drawable/corgi"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="6dp">
 
         <RelativeLayout
-            android:id="@+id/ellipse_30"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:id="@+id/frame_26085"
+            android:layout_width="322dp"
+            android:layout_height="24dp"
+            android:layout_above="@+id/frame_26080"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="317dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginBottom="9dp"
-            android:background="@drawable/ellipse">
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="350dp">
+
+            <View
+                android:id="@+id/sum"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/sum"
+                android:layout_alignParentStart="true"
+                />
 
             <RelativeLayout
-                android:id="@+id/bimessagero"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/bimessageroundeddots"
-                tools:layout_editor_absoluteX="379dp"
-                tools:layout_editor_absoluteY="51dp"
-                android:layout_marginEnd="3dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:layout_marginStart="3dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
+                android:id="@+id/switch2"
+                android:layout_width="124dp"
+                android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="120dp"
+                android:layout_marginStart="120dp">
+
+                <TextView
+                    android:id="@+id/blogs"
+                    android:layout_width="42dp"
+                    android:layout_height="24dp"
+                    android:text="@string/blogs"
+                    android:textAppearance="@style/blogs2"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/videos"
+                    android:layout_width="51dp"
+                    android:layout_height="24dp"
+                    android:text="@string/videos"
+                    android:textAppearance="@style/videos2"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/searchwhite"
                 />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_26080"
+            android:layout_width="330dp"
+            android:layout_height="219dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/frame1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="35dp"
+            />
     </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/frame3"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
-        app:layout_constraintBottom_toTopOf="@+id/frame2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-    <RelativeLayout
-        android:id="@+id/frame2"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
-        app:layout_constraintBottom_toTopOf="@+id/frame1"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-    <RelativeLayout
-        android:id="@+id/frame1"
-        android:layout_width="450dp"
-        android:layout_height="181dp"
-        android:background="@drawable/dogframe"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="15dp"/>
-
-
 
     <RelativeLayout
         android:id="@+id/navigation_"
