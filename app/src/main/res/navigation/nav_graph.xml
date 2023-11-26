@@ -270,4 +270,10 @@
         android:name="com.csc211.petcare.discover.Discover4Fragment"
         android:label="fragment_discover4"
         tools:layout="@layout/fragment_discover4" />
+
+    <fragment
+        android:id="@+id/Discover5Fragment"
+        android:name="com.csc211.petcare.discover.Discover5Fragment"
+        android:label="fragment_discover5"
+        tools:layout="@layout/fragment_discover5" />
 </navigation>
