@@ -276,4 +276,10 @@
         android:name="com.csc211.petcare.discover.Discover5Fragment"
         android:label="fragment_discover5"
         tools:layout="@layout/fragment_discover5" />
+
+    <fragment
+        android:id="@+id/Discover6Fragment"
+        android:name="com.csc211.petcare.discover.Discover6Fragment"
+        android:label="fragment_discover6"
+        tools:layout="@layout/fragment_discover6" />
 </navigation>

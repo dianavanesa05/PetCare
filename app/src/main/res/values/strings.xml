@@ -56,4 +56,7 @@
     <string name="blogs">Blogs</string>
     <string name="videos">Videos</string>
     <string name="post">Post</string>
+    <string name="expert">Expert</string>
+    <string name="most_voted">Most Voted</string>
+    <string name="creator">Creator</string>
 </resources>
