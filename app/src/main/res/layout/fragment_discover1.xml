@@ -10,7 +10,7 @@
         android:id="@+id/framer"
         android:layout_width="328dp"
         android:layout_height="24dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/explore"
