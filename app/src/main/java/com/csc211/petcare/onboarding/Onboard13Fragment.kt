@@ -24,7 +24,7 @@ class Onboard13Fragment : Fragment() {
         val view = binding.root
 
 
-        val petName = arguments?.getString("petName") ?: "N/A"
+        val petName = sharedViewModel.petName.value ?: "N/A"
         val breed = when {
             sharedViewModel.selectedDog != null -> sharedViewModel.selectedDog
             sharedViewModel.selectedCat != null -> sharedViewModel.selectedCat

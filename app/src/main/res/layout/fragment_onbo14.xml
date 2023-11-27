@@ -4,6 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@color/white"
 tools:context=".onboarding.Onboard6Fragment">
 
 
@@ -26,50 +27,50 @@ tools:context=".onboarding.Onboard6Fragment">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
-<ImageView
-    android:id="@+id/finish_view"
-    android:layout_width="210dp"
-    android:layout_height="287dp"
-    android:layout_marginStart="108dp"
-    android:layout_marginBottom="432dp"
-    android:background="@drawable/image_border"
-    android:rotation="0"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:srcCompat="@drawable/image_place" />
+    <ImageView
+        android:id="@+id/finish_view"
+        android:layout_width="210dp"
+        android:layout_height="287dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="412dp"
+        android:background="@drawable/image_border"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dog_pg" />
 
 <ImageView
     android:id="@+id/eli1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="568dp"
+    android:layout_marginTop="548dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.207"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse_style" />
+    app:srcCompat="@drawable/ellipse" />
 
 <ImageView
     android:id="@+id/eli2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="568dp"
+    android:layout_marginTop="548dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.276"
     app:layout_constraintStart_toEndOf="@+id/eli1"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse_style" />
+    app:srcCompat="@drawable/ellipse" />
 
 <ImageView
     android:id="@+id/eli3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="568dp"
+    android:layout_marginTop="548dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.467"
     app:layout_constraintStart_toEndOf="@+id/eli2"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse_style" />
+    app:srcCompat="@drawable/ellipse" />
 
 <Button
     android:id="@+id/nextbutton"
@@ -81,7 +82,7 @@ tools:context=".onboarding.Onboard6Fragment">
     android:layout_marginBottom="70dp"
     android:width="327dp"
     android:height="40dp"
-    android:background="#6750A4"
+    android:background="@color/orange_100"
     android:clipToOutline="true"
     android:text="@string/go"
     android:textColor="@color/white"

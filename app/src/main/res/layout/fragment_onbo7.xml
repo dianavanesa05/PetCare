@@ -61,7 +61,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="240dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/german_shepherd"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -69,7 +69,8 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="124dp"
+        android:background="@color/white"
         android:text="@string/german_dog"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -85,7 +86,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="244dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/golden_retriever"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -93,14 +94,15 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="268dp"
+        android:background="@color/white"
         android:text="@string/golden_dog"
         android:textColor="@color/black"
+
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
 
     <ImageView
         android:id="@+id/dog3_view"
@@ -110,7 +112,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="244dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/labrador_retriever"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -118,7 +120,8 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="410dp"
+        android:background="@color/white"
         android:text="@string/labrador_dog"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -134,7 +137,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/french_bulldog"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -142,7 +145,8 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="248dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="127dp"
+        android:background="@color/white"
         android:text="@string/french_dog"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -158,7 +162,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/poodles"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -166,7 +170,8 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="260dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="268dp"
+        android:background="@color/white"
         android:text="@string/poodle_dog"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -182,7 +187,7 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_message"
-        app:srcCompat="@drawable/image_place"
+        app:srcCompat="@drawable/other"
         android:background="@drawable/image_border" />
 
     <TextView
@@ -190,7 +195,8 @@ tools:context=".onboarding.Onboard7Fragment">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="270dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="410dp"
+        android:background="@color/white"
         android:text="@string/other"
         android:textColor="@color/black"
         android:textSize="12sp"
