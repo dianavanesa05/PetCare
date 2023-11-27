@@ -7,91 +7,32 @@
     tools:context=".onboarding.Onboard2Fragment">
 
 
-    <ImageView
-        android:id="@+id/eli4"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
-
-    <ImageView
-        android:id="@+id/eli5"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
-
-    <ImageView
-        android:id="@+id/eli6"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ellipse" />
-
-    <ImageView
-        android:id="@+id/middle"
-        android:layout_width="249dp"
-        android:layout_height="183dp"
-        android:layout_marginTop="208dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_place" />
-
-    <ImageView
-        android:id="@+id/mini"
-        android:layout_width="39dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_place" />
-
     <TextView
-        android:id="@+id/task_recomm"
-        android:layout_width="237dp"
-        android:layout_height="42dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="400dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="5sp"
+        android:id="@+id/track"
+        android:layout_width="284dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="57dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="-1sp"
         android:text="@string/task_recomm"
-        android:textAppearance="@style/task_recomm"
+        android:textStyle="bold"
+        android:textAppearance="@style/track"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/taskView" />
 
     <TextView
         android:id="@+id/based_on_th"
-        android:layout_width="316dp"
-        android:layout_height="42dp"
+        android:layout_width="290dp"
+        android:layout_height="98dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="50dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="2sp"
         android:text="@string/based_on_th"
-        android:textAppearance="@style/based_on_th"
+        android:textAppearance="@style/remember_yo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -101,7 +42,7 @@
         android:layout_marginTop="640dp"
         android:text="@string/back"
         android:background="@color/white"
-        android:textColor="@color/purple"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
         android:text="@string/next"
-        android:background="@color/purple"
+        android:background="@color/orange_100"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
@@ -123,51 +64,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/progress_bar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="23dp"
-        android:rotation="90"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/status_bar_item_background" />
-
-    <ImageView
-        android:id="@+id/empty_bar"
-        android:layout_width="153dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="14dp"
-        android:rotation="90"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/status_bar_item_app_background" />
-
-    <ImageView
-        android:id="@+id/empty_bar2"
-        android:layout_width="153dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginTop="14dp"
-        android:rotation="90"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/status_bar_item_app_background" />
-
-
-    <ImageView
-        android:id="@+id/empty_bar3"
-        android:layout_width="153dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="271dp"
-        android:layout_marginTop="14dp"
-        android:cropToPadding="false"
-        android:rotation="90"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/status_bar_item_app_background" />
-
+        android:id="@+id/taskView"
+        android:layout_width="414dp"
+        android:layout_height="438dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/task_pic"
+        app:layout_constraintBottom_toTopOf="@+id/back_button"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,17 +1,23 @@
 <resources>
     <string name="app_name">PetCare</string>
-    <string name="welcome_to_">Welcome to ....</string>
+    <string name="welcome_to_">Welcome to the world of dog parents!</string>
     <string name="get_start">Get Started</string>
     <string name="acc">I already have an account</string>
-    <string name="task_recomm">Task Recommendation Feature</string>
-    <string name="based_on_th">Based on the type of pet and breed, PetCare will recommend some</string>
+    <string name="task_recomm">TRACK</string>
+    <string name="based_on_th">
+        <string name="remember_yo">
+Remember your pet\'s daily activities through our smart tracking feature. Don\'t ever forget to procrastinate on lower-frequency tasks because PAWSITIVE knows it all
+</string>
+    </string>
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="pereal_">PEREAL!</string>
-    <string name="pet_owner">80% of Pet owners have admitted they have once procrastinated or delayed taking care of their pets. By taking pictures to share to other pet families, users will be kept accountable while storing memories with their beloved animals.
+    <string name="have_you_ev">
+Have you ever been frustrated with the amount of unreliable infos you received ? Don\'t worry! By doing a quick search, relevant and reliable videos and posts will pop up to address your pet\'s need!
 </string>
     <string name="community">Community Engagement</string>
-    <string name="this_data">This data retrieved will be used later for vet appointments and exchanged among the community.</string>
+    <string name="this_data">Pawsitive is the community of experienced pet owners. By doing a quick search. Connect to your pet owners nearby to ask for advice, arrange playdates and more!
+</string>
     <string name="what_your">What\'s your First Name and Email?</string>
     <string name="available">The app is only available to pet owners with dogs and cats.</string>
     <string name="Dog">Dogs</string>
@@ -59,4 +65,8 @@
     <string name="expert">Expert</string>
     <string name="most_voted">Most Voted</string>
     <string name="creator">Creator</string>
+    <string name="pawsitive">PAWSITIVE</string>
+    <string name="discover2">DISCOVER</string>
+    <string name="connect">CONNECT</string>
+
 </resources>
