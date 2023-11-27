@@ -312,4 +312,22 @@
         android:name="com.csc211.petcare.discover.Discover11Fragment"
         android:label="fragment_discover11"
         tools:layout="@layout/fragment_discover11" />
+
+    <fragment
+        android:id="@+id/Discover12Fragment"
+        android:name="com.csc211.petcare.discover.Discover12Fragment"
+        android:label="fragment_discover12"
+        tools:layout="@layout/fragment_discover12" />
+
+    <fragment
+        android:id="@+id/Discover13Fragment"
+        android:name="com.csc211.petcare.discover.Discover13Fragment"
+        android:label="fragment_discover13"
+        tools:layout="@layout/fragment_discover13" />
+
+    <fragment
+        android:id="@+id/Discover14Fragment"
+        android:name="com.csc211.petcare.discover.Discover14Fragment"
+        android:label="fragment_discover14"
+        tools:layout="@layout/fragment_discover14" />
 </navigation>
