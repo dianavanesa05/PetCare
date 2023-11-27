@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".onboarding.Onboard8Fragment">
 
-
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
@@ -14,11 +13,13 @@
         android:layout_marginTop="640dp"
         android:text="@string/back"
         android:background="@color/white"
-        android:textColor="@color/purple"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <Button
         android:id="@+id/next_button"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
         android:text="@string/next"
-        android:background="@color/purple"
+        android:background="@color/orange_100"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"

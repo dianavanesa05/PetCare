@@ -47,7 +47,7 @@ tools:context=".onboarding.Onboard6Fragment">
     app:layout_constraintHorizontal_bias="0.207"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse" />
+    app:srcCompat="@drawable/ellipse_style" />
 
 <ImageView
     android:id="@+id/eli2"
@@ -58,7 +58,7 @@ tools:context=".onboarding.Onboard6Fragment">
     app:layout_constraintHorizontal_bias="0.276"
     app:layout_constraintStart_toEndOf="@+id/eli1"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse" />
+    app:srcCompat="@drawable/ellipse_style" />
 
 <ImageView
     android:id="@+id/eli3"
@@ -69,7 +69,7 @@ tools:context=".onboarding.Onboard6Fragment">
     app:layout_constraintHorizontal_bias="0.467"
     app:layout_constraintStart_toEndOf="@+id/eli2"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ellipse" />
+    app:srcCompat="@drawable/ellipse_style" />
 
 <Button
     android:id="@+id/nextbutton"

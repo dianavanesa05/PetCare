@@ -12,7 +12,10 @@
     <color name="grey_100">#9F9C9C</color>
     <color name="grey_200">#504D4D</color>
     <color name="blue_100">#12736A</color>
-    <color name="orange_100">#CD6B3E"</color>
+    <color name="light_orange">#F8D5A0</color>
+    <color name="orange_100">#CD6B3E</color>
+
+
 
 
 </resources>

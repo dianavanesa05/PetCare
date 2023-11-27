@@ -49,11 +49,13 @@
         android:layout_marginTop="640dp"
         android:text="@string/back"
         android:background="@color/white"
-        android:textColor="@color/purple"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <Button
         android:id="@+id/next_button"
@@ -61,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
         android:text="@string/next"
-        android:background="@color/purple"
+        android:background="@color/orange_100"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
@@ -74,7 +76,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="76dp"
-        android:background="@color/light_purple"
+        android:background="@color/light_orange"
         android:drawablePadding="8dp"
         android:hint="Email:"
         android:inputType="textEmailAddress"
@@ -90,7 +92,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
-        android:background="@color/light_purple"
+        android:background="@color/light_orange"
         android:drawablePadding="8dp"
         android:hint="First Name:"
         android:inputType="textPersonName"

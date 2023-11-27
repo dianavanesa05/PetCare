@@ -14,19 +14,21 @@
         android:layout_marginTop="640dp"
         android:text="@string/back"
         android:background="@color/white"
-        android:textColor="@color/purple"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="640dp"
-        android:text="@string/next"
-        android:background="@color/purple"
+        android:text="Continue"
+        android:background="@color/orange_100"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
@@ -117,7 +119,7 @@
         android:id="@+id/dog_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="184dp"
         android:text="@string/Cat"
         android:textColor="@color/black"
@@ -130,7 +132,7 @@
         android:id="@+id/cat_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="180dp"
         android:text="@string/Dog"
         android:textColor="@color/black"

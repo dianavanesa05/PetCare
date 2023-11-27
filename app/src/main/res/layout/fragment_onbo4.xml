@@ -28,7 +28,7 @@
         android:layout_height="81dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="7dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="460dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="2sp"
@@ -71,8 +71,8 @@
         android:id="@+id/connectView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:src="@drawable/CONNECT"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/connect"
         app:layout_constraintBottom_toTopOf="@+id/back_button"
         app:layout_constraintEnd_toEndOf="parent" />
 
