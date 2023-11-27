@@ -64,5 +64,6 @@ Have you ever been frustrated with the amount of unreliable infos you received ?
     <string name="pawsitive">PAWSITIVE</string>
     <string name="discover2">DISCOVER</string>
     <string name="connect">CONNECT</string>
+    <string name="upcoming_to">Upcoming today</string>
 
 </resources>

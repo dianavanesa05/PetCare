@@ -221,7 +221,11 @@
         android:id="@+id/onboard14Fragment"
         android:name="com.csc211.petcare.onboarding.Onboard14Fragment"
         android:label="fragment_onbo14"
-        tools:layout="@layout/fragment_onbo14" />
+        tools:layout="@layout/fragment_onbo14" >
+        <action
+            android:id="@+id/action_onboard14Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/Community1Fragment"
@@ -330,4 +334,20 @@
         android:name="com.csc211.petcare.discover.Discover14Fragment"
         android:label="fragment_discover14"
         tools:layout="@layout/fragment_discover14" />
+    <fragment
+        android:id="@+id/homepage1Fragment"
+        android:name="com.csc211.petcare.homepage.Homepage1Fragment"
+        android:label="fragment_homepage1"
+        tools:layout="@layout/fragment_homepage1" >
+        <action
+            android:id="@+id/action_homepage1Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_homepage1Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
 </navigation>
