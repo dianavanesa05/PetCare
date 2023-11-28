@@ -19,6 +19,18 @@ class Discover1Fragment : Fragment() {
     ): View {
         _binding = FragmentDiscover1Binding.inflate(inflater, container, false)
         val view = binding.root
+
+        binding.icon.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover1Fragment_to_homepage1Fragment)
+        }
+
+        binding.body.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover1Fragment_to_Community1Fragment)
+        }
+
+        binding.profileImg.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover1Fragment_to_profile1Fragment)
+        }
         return view
     }
 

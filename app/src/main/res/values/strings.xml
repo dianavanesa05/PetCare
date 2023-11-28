@@ -66,4 +66,30 @@ Have you ever been frustrated with the amount of unreliable infos you received ?
     <string name="connect">CONNECT</string>
     <string name="upcoming_to">Upcoming today</string>
 
+
+        <!-- ... (other string resources) ... -->
+
+        <string-array name="start_times">
+            <item>Select Time</item>
+            <item>9:00 AM</item>
+            <item>12:00 PM</item>
+            <item>3:00 PM</item>
+            <item>6:00 PM</item>
+            <item>9:00 PM</item>
+        </string-array>
+
+        <string name="select_start_time">Select Start Time</string>
+
+    <string-array name="interval_options">
+        <item>Every day</item>
+        <item>Once a week</item>
+        <item>Once a month</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="select_interval">Select Interval</string>
+
+
+    <string name="enter_notes">Enter notes (if any)</string>
+
 </resources>

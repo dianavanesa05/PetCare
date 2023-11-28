@@ -215,7 +215,9 @@
         app:exitAnim="@anim/slide_out_left">
         <action
             android:id="@+id/action_onboard13Fragment_to_onboard14Fragment"
-            app:destination="@id/onboard14Fragment" />
+            app:destination="@id/onboard14Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/onboard14Fragment"
@@ -224,7 +226,9 @@
         tools:layout="@layout/fragment_onbo14" >
         <action
             android:id="@+id/action_onboard14Fragment_to_homepage1Fragment"
-            app:destination="@id/homepage1Fragment" />
+            app:destination="@id/homepage1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
 
     <fragment
@@ -237,6 +241,16 @@
             app:destination="@id/Community2Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_Community1Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment"
+           />
+        <action
+            android:id="@+id/action_Community1Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment" />
+        <action
+            android:id="@+id/action_Community1Fragment_to_profile1Fragment"
+            app:destination="@id/profile1Fragment" />
     </fragment>
 
     <fragment
@@ -255,7 +269,20 @@
         android:id="@+id/Discover1Fragment"
         android:name="com.csc211.petcare.discover.Discover1Fragment"
         android:label="fragment_discover1"
-        tools:layout="@layout/fragment_discover1" />
+        tools:layout="@layout/fragment_discover1" >
+        <action
+            android:id="@+id/action_Discover1Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment"
+            />
+        <action
+            android:id="@+id/action_Discover1Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            />
+        <action
+            android:id="@+id/action_Discover1Fragment_to_profile1Fragment"
+            app:destination="@id/profile1Fragment"
+            />
+    </fragment>
 
     <fragment
         android:id="@+id/Discover2Fragment"
@@ -341,13 +368,19 @@
         tools:layout="@layout/fragment_homepage1" >
         <action
             android:id="@+id/action_homepage1Fragment_to_Discover1Fragment"
-            app:destination="@id/Discover1Fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
+            app:destination="@id/Discover1Fragment" />
         <action
             android:id="@+id/action_homepage1Fragment_to_Community1Fragment"
             app:destination="@id/Community1Fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
+            />
+        <action
+            android:id="@+id/action_homepage1Fragment_to_profile1Fragment"
+            app:destination="@id/profile1Fragment"
+            />
     </fragment>
+    <fragment
+        android:id="@+id/profile1Fragment"
+        android:name="com.csc211.petcare.profile.Profile1Fragment"
+        android:label="fragment_profile1"
+        tools:layout="@layout/fragment_profile1" />
 </navigation>

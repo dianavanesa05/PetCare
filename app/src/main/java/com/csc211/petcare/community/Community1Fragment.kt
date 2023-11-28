@@ -22,6 +22,18 @@ class Community1Fragment : Fragment() {
         binding.ellipse30.setOnClickListener{
             findNavController().navigate(R.id.action_Community1Fragment_to_Community2Fragment)
         }
+
+        binding.icon.setOnClickListener {
+            findNavController().navigate(R.id.action_Community1Fragment_to_homepage1Fragment)
+        }
+
+        binding.pawImg.setOnClickListener {
+            findNavController().navigate(R.id.action_Community1Fragment_to_Discover1Fragment)
+        }
+
+        binding.profileImg.setOnClickListener {
+            findNavController().navigate(R.id.action_Community1Fragment_to_profile1Fragment)
+        }
         return view
     }
 
