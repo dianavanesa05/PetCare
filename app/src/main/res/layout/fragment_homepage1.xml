@@ -273,10 +273,10 @@
 
     <ImageView
         android:id="@+id/taskView"
-        android:layout_width="390dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="360dp"
+        android:layout_width="339dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="384dp"
         android:src="@drawable/tasks"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
