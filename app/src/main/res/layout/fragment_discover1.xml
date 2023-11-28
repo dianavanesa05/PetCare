@@ -195,6 +195,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentBottom="true"
+                            android:background="@drawable/nav_background"
                             android:src="@drawable/paw" />
                     </RelativeLayout>
                 </RelativeLayout>

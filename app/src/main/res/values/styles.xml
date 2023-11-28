@@ -163,4 +163,16 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#262E35</item>
     </style>
+
+    <style name="dog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#5E5E5E</item>
+    </style>
+
+    <style name="menu_item_l">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#2B2B2B</item>
+    </style>
+
 </resources>

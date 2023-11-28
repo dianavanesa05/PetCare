@@ -46,9 +46,8 @@
     <RadioGroup
         android:id="@+id/genderRadioGroup"
         android:layout_width="303dp"
-        android:layout_height="167dp"
+        android:layout_height="200dp"
         android:layout_marginTop="68dp"
-        android:background="@color/light_orange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,19 +57,25 @@
             android:id="@+id/radioFemale"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="@string/female" />
+            android:text="@string/female"
+            android:background="@drawable/frame_recycler"
+            android:layout_marginBottom="11dp"/>
 
         <RadioButton
             android:id="@+id/radioMale"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="@string/male" />
+            android:text="@string/male"
+            android:background="@drawable/frame_recycler"
+            android:layout_marginBottom="11dp"/>
 
         <RadioButton
             android:id="@+id/radioUnknown"
             android:layout_width="match_parent"
             android:layout_height="57dp"
-            android:text="@string/unknown" />
+            android:text="@string/unknown"
+            android:background="@drawable/frame_recycler"
+            android:layout_marginBottom="11dp"/>
     </RadioGroup>
 
     <Button
@@ -83,7 +88,9 @@
         android:layout_marginBottom="24dp"
         android:width="327dp"
         android:height="40dp"
-        android:background="@color/orange_100"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_long_next"
         android:clipToOutline="true"
         android:text="@string/next"
         android:textColor="@color/white"
@@ -102,7 +109,9 @@
         android:layout_marginBottom="132dp"
         android:width="327dp"
         android:height="40dp"
-        android:background="@color/white"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_long_back"
         android:clipToOutline="true"
         android:text="@string/idk"
         android:textColor="@color/black"

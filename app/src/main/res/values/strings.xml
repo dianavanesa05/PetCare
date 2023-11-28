@@ -37,7 +37,7 @@ Have you ever been frustrated with the amount of unreliable infos you received ?
     <string name="what_gender">What\'s their gender ?</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="unknown">Unknown</string>
+    <string name="unknown">N/A</string>
     <string name="upload">Upload a profile pic</string>
     <string name="skip">Skip</string>
     <string name="go">Continue</string>

@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -32,10 +34,33 @@ class Homepage1Fragment: Fragment() {
         val spinnerAdapter = ArrayAdapter(
             requireContext(),
             android.R.layout.simple_spinner_item,
-            listOf(petName, "Dodo")
+            listOf("All Pets", petName, "Dodo")
         )
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         petSpinner.adapter = spinnerAdapter
+
+        val taskView: ImageView = view.findViewById(R.id.taskView)
+
+        // Set an OnItemSelectedListener for the petSpinner
+        petSpinner.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                // Update taskView based on the selected item
+                when (position) {
+                    0 -> taskView.setImageResource(R.drawable.tasks)
+                    1 -> taskView.setImageResource(R.drawable.tasks)
+                    2 -> taskView.setImageResource(R.drawable.task_2)
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Do nothing here
+            }
+        })
 
 
         val newButton: Button = binding.newButton

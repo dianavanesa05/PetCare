@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homepage.Homepage2Fragment">
+    tools:context=".homepage.Homepage1Fragment">
 
     <RelativeLayout
         android:id="@+id/navigation_"
@@ -45,14 +45,15 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true">
 
-                        <ImageButton
-                            android:id="@+id/icon_button"
+                        <ImageView
+                            android:id="@+id/icon_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentBottom="true"
+                            android:background="@drawable/nav_background"
                             android:src="@drawable/fichecksquare" />
                     </RelativeLayout>
                 </RelativeLayout>
@@ -92,8 +93,8 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true">
 
-                        <ImageButton
-                            android:id="@+id/paw_button"
+                        <ImageView
+                            android:id="@+id/paw_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
@@ -147,8 +148,8 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true">
 
-                        <ImageButton
-                            android:id="@+id/body_button"
+                        <ImageView
+                            android:id="@+id/body_View"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
@@ -195,8 +196,8 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true">
 
-                        <ImageButton
-                            android:id="@+id/profile_button"
+                        <ImageView
+                            android:id="@+id/profile_View"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
@@ -230,10 +231,10 @@
         android:id="@+id/tracker_view"
         android:layout_width="436dp"
         android:layout_height="317dp"
-        android:layout_marginBottom="372dp"
+        android:layout_marginBottom="380dp"
         app:layout_constraintBottom_toTopOf="@+id/navigation_"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/tracker" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home" />
 
     <TextView
         android:id="@+id/textView"
@@ -251,11 +252,33 @@
         android:layout_width="81dp"
         android:layout_height="43dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="35dp"
-        android:background="@color/orange_100"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_next"
         android:text="+  New"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/navigation_"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/petSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/menu_item_l"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tracker_view" />
+
+    <ImageView
+        android:id="@+id/taskView"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/tasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
