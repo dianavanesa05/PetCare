@@ -40,7 +40,7 @@ class Homepage1Fragment: Fragment() {
 
         val newButton: Button = binding.newButton
         newButton.setOnClickListener {
-            showAddTaskDialog()
+            findNavController().navigate(R.id.action_homepage1Fragment_to_addTaskDialogFragment)
         }
 
 
@@ -58,10 +58,6 @@ class Homepage1Fragment: Fragment() {
             return view
         }
 
-        private fun showAddTaskDialog() {
-            val addTaskDialog = AddTaskDialogFragment()
-            addTaskDialog.show(childFragmentManager, "AddTaskDialogFragment")
-        }
 
         override fun onDestroyView() {
             super.onDestroyView()
