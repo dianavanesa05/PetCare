@@ -361,7 +361,17 @@
         android:id="@+id/profile1Fragment"
         android:name="com.csc211.petcare.profile.Profile1Fragment"
         android:label="fragment_profile1"
-        tools:layout="@layout/fragment_profile1" />
+        tools:layout="@layout/fragment_profile1" >
+        <action
+            android:id="@+id/action_profile1Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment" />
+        <action
+            android:id="@+id/action_profile1Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment" />
+        <action
+            android:id="@+id/action_profile1Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment" />
+    </fragment>
     <dialog
         android:id="@+id/addTaskDialogFragment"
         android:name="com.csc211.petcare.homepage.AddTaskDialogFragment"

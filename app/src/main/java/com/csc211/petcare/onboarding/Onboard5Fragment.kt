@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.csc211.petcare.R
 import com.csc211.petcare.databinding.FragmentOnbo5Binding
@@ -12,6 +13,8 @@ import com.csc211.petcare.databinding.FragmentOnbo5Binding
 class Onboard5Fragment : Fragment() {
     private var _binding: FragmentOnbo5Binding? = null
     private val binding get() = _binding!!
+
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,14 +24,17 @@ class Onboard5Fragment : Fragment() {
         val view = binding.root
 
         binding.nameInput
+
         binding.backButton.setOnClickListener {
             findNavController().navigate(R.id.action_onboard5Fragment_to_onboard4Fragment)
         }
         binding.nextButton.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("userName", binding.nameInput.text.toString())
-            findNavController().navigate(R.id.action_onboard5Fragment_to_onboard6Fragment, bundle)
+            val userName = binding.nameInput.text.toString()
+            sharedViewModel.petName.value = userName
 
+            val bundle = Bundle()
+            bundle.putString("userName", userName)
+            findNavController().navigate(R.id.action_onboard5Fragment_to_onboard6Fragment, bundle)
         }
 
         return view
