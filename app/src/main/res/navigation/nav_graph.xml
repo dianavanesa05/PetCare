@@ -109,11 +109,6 @@
             app:destination="@id/onboard7Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
-        <action
-            android:id="@+id/action_onboard6Fragment_to_onboard8Fragment"
-            app:destination="@id/onboard8Fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left" />
     </fragment>
 
 
@@ -133,25 +128,6 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"/>
     </fragment>
-
-
-    <fragment
-        android:id="@+id/onboard8Fragment"
-        android:name="com.csc211.petcare.onboarding.Onboard8Fragment"
-        android:label="fragment_onbo8"
-        tools:layout="@layout/fragment_onbo8" >
-        <action
-            android:id="@+id/action_onboard8Fragment_to_onboard6Fragment"
-            app:destination="@id/onboard6Fragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"/>
-        <action
-            android:id="@+id/action_onboard8Fragment_to_onboard9Fragment"
-            app:destination="@id/onboard9Fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
-    </fragment>
-
 
 
     <fragment

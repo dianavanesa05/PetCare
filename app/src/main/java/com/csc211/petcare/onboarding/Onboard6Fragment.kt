@@ -28,23 +28,7 @@ class Onboard6Fragment : Fragment() {
         }
 
         binding.nextButton.setOnClickListener {
-            val selectedImageTag = when {
-                binding.dogView.isSelected -> "dog"
-                binding.catView.isSelected -> "cat"
-                else -> null
-            }
-
-            if (selectedImageTag != null) {
-                val action = if (selectedImageTag == "dog") {
-                    R.id.action_onboard6Fragment_to_onboard8Fragment
-                } else {
-                    R.id.action_onboard6Fragment_to_onboard7Fragment
-                }
-                findNavController().navigate(action)
-            } else {
-                // Handle the case where no image is selected
-                // You may want to show a message or take other actions
-            }
+                findNavController().navigate(R.id.action_onboard6Fragment_to_onboard7Fragment)
         }
 
         return view
@@ -53,21 +37,20 @@ class Onboard6Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.dogView.setOnClickListener {
+        binding.momView.setOnClickListener {
             onImageClicked(it)
         }
 
-        binding.catView.setOnClickListener {
+        binding.dadView.setOnClickListener {
             onImageClicked(it)
         }
     }
 
     private fun onImageClicked(view: View) {
         // Reset the border for all images
-        binding.dogView.isSelected = false
-        binding.catView.isSelected = false
+        binding.dadView.isSelected = false
+        binding.momView.isSelected = false
 
-        // Set the border for the clicked image
         view.isSelected = true
     }
 

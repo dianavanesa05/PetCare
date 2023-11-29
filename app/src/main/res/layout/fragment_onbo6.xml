@@ -92,57 +92,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/dog_view"
-        android:layout_width="213dp"
-        android:layout_height="273dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/image_border"
-        android:rotation="90"
-        android:onClick="onImageClicked"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/parag3"
-        app:srcCompat="@drawable/image_place"
-        android:tag="dog" />
-
-    <ImageView
-        android:id="@+id/cat_view"
-        android:layout_width="213dp"
-        android:layout_height="273dp"
+        android:id="@+id/mom_view"
+        android:layout_width="197dp"
+        android:layout_height="326dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/image_border"
-        android:rotation="90"
         android:onClick="onImageClicked"
+        android:tag="cat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parag3"
-        app:srcCompat="@drawable/image_place"
-        android:tag="cat"  />
+        app:srcCompat="@drawable/mom_dog" />
+
+    <ImageView
+        android:id="@+id/dad_view"
+        android:layout_width="211dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/image_border"
+        android:onClick="onImageClicked"
+        android:rotation="0"
+        android:tag="dog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parag3"
+        app:srcCompat="@drawable/dad_dog" />
+
 
     <TextView
-        android:id="@+id/dog_text"
+        android:id="@+id/mom_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="184dp"
-        android:text="@string/Cat"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="340dp"
+        android:text="@string/Mom"
+        android:textAppearance="@style/puppy_mom"
         android:textColor="@color/black"
-        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/cat_view"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parag3" />
 
     <TextView
-        android:id="@+id/cat_text"
+        android:id="@+id/dad_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="180dp"
-        android:text="@string/Dog"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="71dp"
+        android:text="@string/Dad"
+        android:textAppearance="@style/puppy_mom"
         android:textColor="@color/black"
-        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/cat_view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parag3" />
 
 

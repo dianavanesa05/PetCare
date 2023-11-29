@@ -16,12 +16,6 @@ class Onboard7Fragment : Fragment() {
 
     private val sharedViewModel: SharedViewModel by activityViewModels()
 
-    private var selectedDog1 = false
-    private var selectedDog2 = false
-    private var selectedDog3 = false
-    private var selectedDog4 = false
-    private var selectedDog5 = false
-    private var selectedDog6 = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

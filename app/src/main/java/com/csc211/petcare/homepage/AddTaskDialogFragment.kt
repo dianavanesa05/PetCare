@@ -1,6 +1,6 @@
 package com.csc211.petcare.homepage
 
-import android.R
+import com.csc211.petcare.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -33,36 +33,11 @@ class AddTaskDialogFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        val taskSpinner: Spinner = binding.taskSpinner
+        val startSpinner: Spinner = binding.timeSpinner
+        val startTimes = arrayOf("Select Time", "9:00 AM","10:00 AM","11:00 AM","12:00 PM", "1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM", "6:00 PM","7:00 PM","8:00 PM", "9:00 PM")
 
-        val taskOptions = arrayOf("Grooming", "Feeding", "Medicine", "Teeth-brushing", "Dog-walking", "Bath")
-        val taskAdapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item, taskOptions)
-        taskAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
-        taskSpinner.adapter = taskAdapter
-
-
-
-
-        val petSpinner: Spinner = binding.petSpinner
-        val petName = sharedViewModel.petName.value ?: "N/A"
-
-        val pets = listOf(petName, "Dodo")
-        val petSpinnerAdapter = ArrayAdapter(
-            requireContext(),
-            R.layout.simple_spinner_item,
-            pets
-        )
-        petSpinnerAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
-        petSpinner.adapter = petSpinnerAdapter
-
-
-
-
-        val startSpinner: Spinner = binding.startSpinner
-        val startTimes = arrayOf("Select Time", "9:00 AM", "12:00 PM", "3:00 PM", "6:00 PM", "9:00 PM")
-
-        val startAdapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item, startTimes)
-        startAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+        val startAdapter = ArrayAdapter(requireContext(), androidx.transition.R.layout.support_simple_spinner_dropdown_item, startTimes)
+        startAdapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
         startSpinner.adapter = startAdapter
 
         val notesEditText: EditText = binding.notesEditText
@@ -71,10 +46,9 @@ class AddTaskDialogFragment : DialogFragment() {
         val intervalSpinner: Spinner = binding.intervalSpinner
         val intervalOptions = arrayOf("Every day", "Once a week", "Once a month", "Custom")
 
-        val intervalAdapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item, intervalOptions)
-        intervalAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+        val intervalAdapter = ArrayAdapter(requireContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, intervalOptions)
+        intervalAdapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
         intervalSpinner.adapter = intervalAdapter
-
 
 
 
@@ -84,8 +58,62 @@ class AddTaskDialogFragment : DialogFragment() {
             val notes = notesEditText.text.toString()
             dismiss()
         }
+
+
+        binding.feedingView.setOnClickListener {
+            onImageClicked(it)
+        }
+
+        binding.medicineView.setOnClickListener {
+            onImageClicked(it)
+        }
+        binding.teethView.setOnClickListener {
+            onImageClicked(it)
+        }
+
+        binding.walkingView.setOnClickListener {
+            onImageClicked(it)
+        }
+        binding.bathView.setOnClickListener {
+            onImageClicked(it)
+        }
+
+        binding.newView.setOnClickListener {
+            onImageClicked(it)
+        }
+        binding.ciciView.setOnClickListener {
+            onImageClicked(it)
+        }
+
+        binding.dodoView.setOnClickListener {
+            onImageClicked(it)
+        }
     }
 
+    private fun onImageClicked(view: View) {
+        // Reset the border for all images
+        binding.feedingView.isSelected = false
+        binding.medicineView.isSelected = false
+        binding.teethView.isSelected = false
+        binding.walkingView.isSelected = false
+        binding.bathView.isSelected = false
+        binding.newView.isSelected = false
+        binding.ciciView.isSelected = false
+        binding.dodoView.isSelected = false
+
+        view.isSelected = true
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val dialog = dialog
+        dialog?.let {
+            val width = resources.getDimensionPixelSize(R.dimen.popup_width)
+            val height = resources.getDimensionPixelSize(R.dimen.popup_height)
+            it.window?.setLayout(width, height)
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

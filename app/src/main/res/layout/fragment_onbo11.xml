@@ -69,13 +69,7 @@
             android:background="@drawable/frame_recycler"
             android:layout_marginBottom="11dp"/>
 
-        <RadioButton
-            android:id="@+id/radioUnknown"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:text="@string/unknown"
-            android:background="@drawable/frame_recycler"
-            android:layout_marginBottom="11dp"/>
+
     </RadioGroup>
 
     <Button
