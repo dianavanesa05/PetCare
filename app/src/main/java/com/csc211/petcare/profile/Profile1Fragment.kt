@@ -25,7 +25,7 @@ class Profile1Fragment : Fragment() {
         val petName = sharedViewModel.petName.value ?: "N/A"
         binding.petText.text = petName
 
-        val userName = sharedViewModel.userName.value ?: "N/A"
+        val userName = sharedViewModel.userName.value ?: sharedViewModel.enteredName.value ?: "N/A"
         binding.ownerText.text = userName
 
 

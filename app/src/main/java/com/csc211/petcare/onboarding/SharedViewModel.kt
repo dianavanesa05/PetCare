@@ -11,5 +11,10 @@ class SharedViewModel : ViewModel() {
     var selectedGender: String? = null
     var selectedImageUri: Uri? = null
     val userName = MutableLiveData<String>()
+    val enteredName = MutableLiveData<String>() // Add this line
 
+
+    fun setEnteredName(name: String) {
+        enteredName.value = name
+    }
 }

@@ -31,6 +31,7 @@ class Onboard5Fragment : Fragment() {
         binding.nextButton.setOnClickListener {
             val userName = binding.nameInput.text.toString()
             sharedViewModel.petName.value = userName
+            sharedViewModel.setEnteredName(userName) // Set entered name in the ViewModel
 
             val bundle = Bundle()
             bundle.putString("userName", userName)

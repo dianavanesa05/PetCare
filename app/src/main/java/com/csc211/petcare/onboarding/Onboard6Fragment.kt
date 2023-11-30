@@ -13,7 +13,7 @@ import com.csc211.petcare.databinding.FragmentOnbo6Binding
 class Onboard6Fragment : Fragment() {
     private var _binding: FragmentOnbo6Binding? = null
     private val binding get() = _binding!!
-
+    private val sharedViewModel: SharedViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,9 +21,10 @@ class Onboard6Fragment : Fragment() {
         _binding = FragmentOnbo6Binding.inflate(inflater, container, false)
         val view = binding.root
 
-        val userName = arguments?.getString("userName")
-        binding.hiMessage.text = "Hi $userName !"
+        val userName = arguments?.getString("userName") ?: ""
+        sharedViewModel.setEnteredName(userName)
 
+        binding.hiMessage.text = "Hi $userName !"
         binding.backButton.setOnClickListener {
             findNavController().navigate(R.id.action_onboard6Fragment_to_onboard5Fragment)
         }
