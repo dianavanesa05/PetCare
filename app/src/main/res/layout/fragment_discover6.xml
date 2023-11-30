@@ -25,7 +25,7 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/category"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/eat_grape"/>
+        android:background="@drawable/search_new"/>
 
     <RelativeLayout
         android:id="@+id/category"

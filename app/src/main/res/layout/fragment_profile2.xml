@@ -4,7 +4,238 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile.Profile1Fragment">
+    tools:context=".profile.Profile2Fragment">
+
+    <ImageView
+        android:id="@+id/background_view"
+        android:layout_width="0dp"
+        android:layout_height="462dp"
+        android:layout_marginBottom="478dp"
+        android:src="@drawable/discover"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/frame_26080"
+        android:layout_width="340dp"
+        android:layout_height="27.42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toTopOf="@+id/ellipse_23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/arrow_back_"
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/arrow" />
+
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="70.11dp"
+            android:layout_height="26.38dp"
+            android:background="@drawable/subscribe"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ellipse_24"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/dogava"
+        app:layout_constraintBottom_toTopOf="@+id/vector"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/furfriends"
+        android:layout_width="78dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/furfriends"
+        android:textAppearance="@style/furfriends"
+        android:translationY="-2.62sp"
+        app:layout_constraintBottom_toTopOf="@+id/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_23" />
+
+    <TextView
+        android:id="@+id/charlie"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="76dp"
+        android:gravity="top"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/charlie"
+        android:textAppearance="@style/charlie"
+        android:translationY="-1.8sp"
+        app:layout_constraintBottom_toTopOf="@+id/four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_24" />
+
+    <ImageView
+        android:id="@+id/ellipse_23"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/friend"
+        app:layout_constraintBottom_toTopOf="@+id/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/verify"
+        app:layout_constraintBottom_toTopOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/k_uppaws"
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/num440"
+        app:layout_constraintBottom_toTopOf="@+id/frame2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="90dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/num100"
+        app:layout_constraintBottom_toTopOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/frame1"
+        android:layout_width="327dp"
+        android:layout_height="179dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/dog1"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/dog1" />
+
+        <RelativeLayout
+            android:id="@+id/dog2"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="112dp"
+            android:background="@drawable/dog2" />
+
+
+        <RelativeLayout
+            android:id="@+id/dog3"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/dog3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame2"
+        android:layout_width="327dp"
+        android:layout_height="179dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/dog4"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/dog4" />
+
+        <RelativeLayout
+            android:id="@+id/dog5"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="112dp"
+            android:background="@drawable/dog2" />
+
+
+        <RelativeLayout
+            android:id="@+id/dog6"
+            android:layout_width="101dp"
+            android:layout_height="179dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/dog5" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/navigation_"
@@ -226,58 +457,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/background_view"
-        android:layout_width="0dp"
-        android:layout_height="462dp"
-        android:layout_marginBottom="428dp"
-        android:src="@drawable/discover"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/pic_view"
-        android:layout_width="424dp"
-        android:layout_height="262dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/profile_pic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="404dp"
-        android:layout_marginBottom="2dp"
-        android:src="@drawable/profile_content"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/owner_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="257dp"
-        android:lineSpacingExtra="4sp"
-        android:text="TextView"
-        android:textAppearance="@style/emma_tran"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/pet_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="68dp"
-        android:lineSpacingExtra="4sp"
-        android:text="TextView"
-        android:textAppearance="@style/dodo"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

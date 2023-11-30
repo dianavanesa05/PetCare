@@ -4,11 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".discover.Discover13Fragment">
+    tools:context=".community.Community5Fragment">
 
     <RelativeLayout
         android:id="@+id/frame_26080"
-        android:layout_width="350dp"
+        android:layout_width="340dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:layout_alignParentStart="true"
@@ -17,64 +17,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
+        <View
             android:id="@+id/close"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/arrow" />
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/close" />
 
         <RelativeLayout
             android:id="@+id/button"
-            android:layout_width="78dp"
+            android:layout_width="85dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/next_orange" />
+            android:background="@drawable/share_orange" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/examples_me"
-        android:layout_width="340dp"
-        android:layout_height="80dp"
+    <TextView
+        android:id="@+id/brushing_th"
+        android:layout_width="263dp"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:text="@string/brushing_th"
+        android:layout_marginTop="30dp"
+        android:textAppearance="@style/brushing_th"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/com_yellow"
-        android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@+id/frame_26080" />
 
-    <TextView
-        android:id="@+id/you_can_sel"
-        android:layout_width="316dp"
-        android:layout_height="16dp"
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="328dp"
+        android:layout_height="298dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="2sp"
-        android:text="@string/you_can_sel"
-        android:textAppearance="@style/you_can_sel"
-        app:layout_constraintBottom_toTopOf="@+id/frame_group"
+        android:background="@drawable/dog48"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/examples_me" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/brushing_th" />
 
-    <RelativeLayout
-        android:id="@+id/frame_group"
-        android:layout_width="325dp"
-        android:layout_height="395dp"
+    <View
+        android:id="@+id/group_4073"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/groups"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/examples_me" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/retake"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

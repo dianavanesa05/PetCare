@@ -62,37 +62,37 @@ Have you ever been frustrated with the amount of unreliable infos you received ?
     <string name="upcoming_to">Upcoming today</string>
 
 
-        <!-- ... (other string resources) ... -->
+    <!-- ... (other string resources) ... -->
 
-        <string-array name="start_times">
-            <item>Select Time</item>
-            <item>1:00 AM</item>
-            <item>2:00 AM</item>
-            <item>3:00 AM</item>
-            <item>4:00 AM</item>
-            <item>5:00 AM</item>
-            <item>6:00 AM</item>
-            <item>7:00 AM</item>
-            <item>8:00 AM</item>
-            <item>9:00 AM</item>
-            <item>10:00 AM</item>
-            <item>11:00 AM</item>
-            <item>12:00 PM</item>
-            <item>1:00 PM</item>
-            <item>2:00 PM</item>
-            <item>3:00 PM</item>
-            <item>4:00 PM</item>
-            <item>5:00 PM</item>
-            <item>6:00 PM</item>
-            <item>7:00 PM</item>
-            <item>8:00 PM</item>
-            <item>9:00 PM</item>
-            <item>10:00 PM</item>
-            <item>11:00 PM</item>
-            <item>12:00 AM</item>
-        </string-array>
+    <string-array name="start_times">
+        <item>Select Time</item>
+        <item>1:00 AM</item>
+        <item>2:00 AM</item>
+        <item>3:00 AM</item>
+        <item>4:00 AM</item>
+        <item>5:00 AM</item>
+        <item>6:00 AM</item>
+        <item>7:00 AM</item>
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
+        <item>7:00 PM</item>
+        <item>8:00 PM</item>
+        <item>9:00 PM</item>
+        <item>10:00 PM</item>
+        <item>11:00 PM</item>
+        <item>12:00 AM</item>
+    </string-array>
 
-        <string name="select_start_time">Select Start Time</string>
+    <string name="select_start_time">Select Start Time</string>
 
     <string-array name="interval_options">
         <item>Every day</item>
@@ -106,4 +106,14 @@ Have you ever been frustrated with the amount of unreliable infos you received ?
 
     <string name="enter_notes">Enter notes (if any)</string>
 
+    <string name="k_uppaws">440k\nUpPaws</string>
+
+    <string name="furfriends">FurFriends</string>
+
+    <string name="charlie">Charlie</string>
+
+    <string name="your_groups">Your Groups</string>
+    <string name="share_a_pic">Share a picture</string>
+    <string name="you_can_sel">You can select multiple community groups @ the same tm</string>
+    <string name="brushing_th">Brushing the teeth for CiCi</string>
 </resources>

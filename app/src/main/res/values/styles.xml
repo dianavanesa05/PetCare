@@ -199,4 +199,42 @@
         <item name="android:textColor">#000000</item>
     </style>
 
+    <style name="k_uppaws">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="furfriends">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="charlie">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="your_groups">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="you_can_sel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="share_a_pic">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+    </style>
+
+    <style name="brushing_th">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+    </style>
 </resources>
