@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.Onboard10Fragment">
+    tools:context=".community.Community1Fragment">
 
     <RelativeLayout
         android:id="@+id/frame_26080"
@@ -52,27 +52,26 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/view_all"
+    <ImageView
+        android:id="@+id/viewall"
         android:layout_width="57dp"
         android:layout_height="19dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="4dp"
         android:gravity="top"
-        android:text="@string/view_all"
-        android:textAppearance="@style/view_all"
+        android:clickable="true"
+        android:background="@drawable/view_all"
         app:layout_constraintBottom_toTopOf="@+id/active"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
+    <ImageView
         android:id="@+id/nearby"
-        android:layout_width="56dp"
-        android:layout_height="19dp"
+        android:layout_width="50dp"
+        android:layout_height="16dp"
         android:layout_marginStart="36dp"
         android:layout_marginBottom="4dp"
         android:gravity="top"
-        android:text="@string/nearby"
-        android:textAppearance="@style/nearby"
+        android:background="@drawable/nearby_text"
         app:layout_constraintBottom_toTopOf="@+id/active"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -102,6 +101,7 @@
         android:id="@+id/feed_cards"
         android:layout_width="336dp"
         android:layout_height="426dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/feed_cards"
         app:layout_constraintBottom_toTopOf="@+id/navigation_"
         app:layout_constraintEnd_toEndOf="parent"

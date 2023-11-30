@@ -18,6 +18,13 @@ class Community4Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentCommunity4Binding.inflate(inflater, container, false)
+        binding.close.setOnClickListener{
+            findNavController().navigate(R.id.action_Community4Fragment_to_Community1Fragment)
+        }
+
+        binding.frame26080.setOnClickListener{
+            findNavController().navigate(R.id.action_Community4Fragment_to_Community5Fragment)
+        }
         val view = binding.root
         return view
     }

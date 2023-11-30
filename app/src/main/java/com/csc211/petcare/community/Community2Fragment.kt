@@ -19,6 +19,9 @@ class Community2Fragment : Fragment() {
     ): View {
         _binding = FragmentCommunity2Binding.inflate(inflater, container, false)
         val view = binding.root
+        binding.arrowBack.setOnClickListener(){
+            findNavController().navigate(R.id.action_Community2Fragment_to_Community1Fragment)
+        }
         return view
     }
 

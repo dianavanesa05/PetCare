@@ -19,6 +19,15 @@ class Community5Fragment : Fragment() {
     ): View {
         _binding = FragmentCommunity5Binding.inflate(inflater, container, false)
         val view = binding.root
+        binding.close.setOnClickListener{
+            findNavController().navigate(R.id.action_Community5Fragment_to_Community1Fragment)
+        }
+        binding.button.setOnClickListener{
+            findNavController().navigate(R.id.action_Community5Fragment_to_Community1Fragment)
+        }
+        binding.group4073.setOnClickListener{
+            findNavController().navigate(R.id.action_Community5Fragment_to_Community4Fragment)
+        }
         return view
     }
 

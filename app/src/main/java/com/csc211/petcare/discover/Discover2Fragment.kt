@@ -19,6 +19,9 @@ class Discover2Fragment : Fragment() {
     ): View {
         _binding = FragmentDiscover2Binding.inflate(inflater, container, false)
         val view = binding.root
+        binding.arrowBack.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover2Fragment_to_Discover1Fragment)
+        }
         return view
     }
 

@@ -15,6 +15,12 @@
             app:destination="@id/onboard2Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_onboard1Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
 
 
@@ -227,19 +233,49 @@
         <action
             android:id="@+id/action_Community1Fragment_to_profile1Fragment"
             app:destination="@id/profile1Fragment" />
+        <action
+            android:id="@+id/action_Community1Fragment_to_Community3Fragment"
+            app:destination="@id/Community3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_Community1Fragment_to_Community4Fragment"
+            app:destination="@id/Community4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
         android:id="@+id/Community2Fragment"
         android:name="com.csc211.petcare.community.Community2Fragment"
         android:label="fragment_community2"
-        tools:layout="@layout/fragment_community2" />
+        tools:layout="@layout/fragment_community2">
+
+        <action
+            android:id="@+id/action_Community2Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
 
     <fragment
         android:id="@+id/Community3Fragment"
         android:name="com.csc211.petcare.community.Community3Fragment"
         android:label="fragment_community3"
-        tools:layout="@layout/fragment_community3" />
+        tools:layout="@layout/fragment_community3">
+
+        <action
+            android:id="@+id/action_Community3Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_Community3Fragment_to_Community2Fragment"
+            app:destination="@id/Community2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
 
     <fragment
         android:id="@+id/Discover1Fragment"
@@ -248,29 +284,47 @@
         tools:layout="@layout/fragment_discover1" >
         <action
             android:id="@+id/action_Discover1Fragment_to_homepage1Fragment"
-            app:destination="@id/homepage1Fragment"
-            />
+            app:destination="@id/homepage1Fragment" />
         <action
             android:id="@+id/action_Discover1Fragment_to_Community1Fragment"
-            app:destination="@id/Community1Fragment"
-            />
+            app:destination="@id/Community1Fragment" />
         <action
             android:id="@+id/action_Discover1Fragment_to_profile1Fragment"
-            app:destination="@id/profile1Fragment"
-            />
+            app:destination="@id/profile1Fragment" />
+
+        <action
+            android:id="@+id/action_Discover1Fragment_to_Discover2Fragment"
+            app:destination="@id/Discover2Fragment"
+            app:enterAnim="@anim/slide_in_right"/>
+
+        <action
+            android:id="@+id/action_Discover1Fragment_to_Discover3Fragment"
+            app:destination="@id/Discover3Fragment"
+            app:enterAnim="@anim/slide_in_right"/>
     </fragment>
 
     <fragment
         android:id="@+id/Discover2Fragment"
         android:name="com.csc211.petcare.discover.Discover2Fragment"
         android:label="fragment_discover2"
-        tools:layout="@layout/fragment_discover2" />
+        tools:layout="@layout/fragment_discover2">
+
+        <action
+            android:id="@+id/action_Discover2Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
         android:id="@+id/Discover3Fragment"
         android:name="com.csc211.petcare.discover.Discover3Fragment"
         android:label="fragment_discover3"
-        tools:layout="@layout/fragment_discover3" />
+        tools:layout="@layout/fragment_discover3">
+
+        <action
+        android:id="@+id/action_Discover3Fragment_to_Discover4Fragment"
+        app:destination="@id/Discover4Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/Discover4Fragment"
@@ -371,6 +425,42 @@
         <action
             android:id="@+id/action_profile1Fragment_to_Community1Fragment"
             app:destination="@id/Community1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Community4Fragment"
+        android:name="com.csc211.petcare.community.Community4Fragment"
+        android:label="fragment_community4"
+        tools:layout="@layout/fragment_community4" >
+        <action
+            android:id="@+id/action_Community4Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_Community4Fragment_to_Community5Fragment"
+            app:destination="@id/Community5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Community5Fragment"
+        android:name="com.csc211.petcare.community.Community5Fragment"
+        android:label="fragment_community5"
+        tools:layout="@layout/fragment_community5" >
+        <action
+            android:id="@+id/action_Community5Fragment_to_Community4Fragment"
+            app:destination="@id/Community4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_Community5Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_down"/>
     </fragment>
     <dialog
         android:id="@+id/addTaskDialogFragment"

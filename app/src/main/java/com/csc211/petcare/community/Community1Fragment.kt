@@ -34,6 +34,14 @@ class Community1Fragment : Fragment() {
         binding.profileImg.setOnClickListener {
             findNavController().navigate(R.id.action_Community1Fragment_to_profile1Fragment)
         }
+
+        binding.viewall.setOnClickListener {
+            findNavController().navigate(R.id.action_Community1Fragment_to_Community3Fragment)
+        }
+
+        binding.mdaddcircle.setOnClickListener{
+            findNavController().navigate(R.id.action_Community1Fragment_to_Community4Fragment)
+        }
         return view
     }
 

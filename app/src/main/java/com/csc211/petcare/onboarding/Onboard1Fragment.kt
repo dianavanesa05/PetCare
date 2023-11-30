@@ -22,6 +22,9 @@ class Onboard1Fragment : Fragment() {
         binding.startButton.setOnClickListener {
             findNavController().navigate(R.id.action_onboard1Fragment_to_onboard2Fragment)
              }
+        binding.accButton.setOnClickListener{
+            findNavController().navigate(R.id.action_onboard1Fragment_to_homepage1Fragment)
+        }
         return view
     }
 

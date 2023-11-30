@@ -31,6 +31,14 @@ class Discover1Fragment : Fragment() {
         binding.profileImg.setOnClickListener {
             findNavController().navigate(R.id.action_Discover1Fragment_to_profile1Fragment)
         }
+
+        binding.feedCards.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover1Fragment_to_Discover2Fragment)
+        }
+
+        binding.videos.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover1Fragment_to_Discover3Fragment)
+        }
         return view
     }
 
