@@ -19,6 +19,31 @@ class Discover4Fragment: Fragment() {
     ): View {
         _binding = FragmentDiscover4Binding.inflate(inflater, container, false)
         val view = binding.root
+
+        binding.icon.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover4Fragment_to_homepage1Fragment)
+        }
+
+        binding.body.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover4Fragment_to_Community1Fragment)
+        }
+
+        binding.profileImg.setOnClickListener {
+            findNavController().navigate(R.id.action_Discover4Fragment_to_profile1Fragment)
+        }
+
+        binding.mdaddcircle.setOnClickListener {
+            findNavController().navigate(R.id.action_Discovery4Fragment_to_Community4Fragment)
+        }
+
+        binding.search.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover4Fragment_to_Discover5Fragment)
+        }
+
+        binding.blogs.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover4Fragment_to_Discover1Fragment)
+        }
+
         return view
     }
 

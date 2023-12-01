@@ -19,6 +19,9 @@ class Discover5Fragment: Fragment() {
     ): View {
         _binding = FragmentDiscover5Binding.inflate(inflater, container, false)
         val view = binding.root
+        binding.arrowBack.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery5Fragment_to_Discover1Fragment)
+        }
         return view
     }
 

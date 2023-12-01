@@ -301,6 +301,17 @@
             android:id="@+id/action_Discover1Fragment_to_Discover3Fragment"
             app:destination="@id/Discover3Fragment"
             app:enterAnim="@anim/slide_in_right"/>
+
+        <action
+            android:id="@+id/action_Discover1Fragment_to_Discover5Fragment"
+            app:destination="@id/Discover5Fragment"
+            app:enterAnim="@anim/slide_in_right"/>
+
+        <action
+            android:id="@+id/action_Discovery1Fragment_to_Community4Fragment"
+            app:destination="@id/Community4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -322,21 +333,53 @@
         tools:layout="@layout/fragment_discover3">
 
         <action
-        android:id="@+id/action_Discover3Fragment_to_Discover4Fragment"
-        app:destination="@id/Discover4Fragment" />
+            android:id="@+id/action_Discover3Fragment_to_Discover4Fragment"
+            app:destination="@id/Discover4Fragment" />
     </fragment>
 
     <fragment
         android:id="@+id/Discover4Fragment"
         android:name="com.csc211.petcare.discover.Discover4Fragment"
         android:label="fragment_discover4"
-        tools:layout="@layout/fragment_discover4" />
+        tools:layout="@layout/fragment_discover4">
+
+        <action
+            android:id="@+id/action_Discover4Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment" />
+
+        <action
+            android:id="@+id/action_Discover4Fragment_to_homepage1Fragment"
+            app:destination="@id/homepage1Fragment" />
+        <action
+            android:id="@+id/action_Discover4Fragment_to_Community1Fragment"
+            app:destination="@id/Community1Fragment" />
+        <action
+            android:id="@+id/action_Discover4Fragment_to_profile1Fragment"
+            app:destination="@id/profile1Fragment" />
+
+        <action
+            android:id="@+id/action_Discover4Fragment_to_Discover5Fragment"
+            app:destination="@id/Discover5Fragment"
+            app:enterAnim="@anim/slide_in_right"/>
+
+        <action
+            android:id="@+id/action_Discovery4Fragment_to_Community4Fragment"
+            app:destination="@id/Community4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
         android:id="@+id/Discover5Fragment"
         android:name="com.csc211.petcare.discover.Discover5Fragment"
         android:label="fragment_discover5"
-        tools:layout="@layout/fragment_discover5" />
+        tools:layout="@layout/fragment_discover5">
+
+        <action
+            android:id="@+id/action_Discovery5Fragment_to_Discover1Fragment"
+            app:destination="@id/Discover1Fragment"
+            app:enterAnim="@anim/slide_in_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/Discover6Fragment"

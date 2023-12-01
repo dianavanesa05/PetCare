@@ -32,8 +32,16 @@ class Discover1Fragment : Fragment() {
             findNavController().navigate(R.id.action_Discover1Fragment_to_profile1Fragment)
         }
 
+        binding.mdaddcircle.setOnClickListener {
+            findNavController().navigate(R.id.action_Discovery1Fragment_to_Community4Fragment)
+        }
+
         binding.feedCards.setOnClickListener {
             findNavController().navigate(R.id.action_Discover1Fragment_to_Discover2Fragment)
+        }
+
+        binding.search.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover1Fragment_to_Discover5Fragment)
         }
 
         binding.videos.setOnClickListener{
