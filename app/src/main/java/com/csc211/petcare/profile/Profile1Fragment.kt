@@ -33,6 +33,10 @@ class Profile1Fragment : Fragment() {
             findNavController().navigate(R.id.action_profile1Fragment_to_homepage1Fragment)
         }
 
+        binding.mdaddcircle.setOnClickListener {
+            findNavController().navigate(R.id.action_profile1Fragment_to_Community4Fragment)
+        }
+
         binding.pawView.setOnClickListener {
             findNavController().navigate(R.id.action_profile1Fragment_to_Discover1Fragment)
         }

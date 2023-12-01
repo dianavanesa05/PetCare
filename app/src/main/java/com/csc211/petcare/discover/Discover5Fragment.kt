@@ -22,6 +22,10 @@ class Discover5Fragment: Fragment() {
         binding.arrowBack.setOnClickListener{
             findNavController().navigate(R.id.action_Discovery5Fragment_to_Discover1Fragment)
         }
+
+        binding.examplesMe.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery5Fragment_to_Discover6Fragment)
+        }
         return view
     }
 

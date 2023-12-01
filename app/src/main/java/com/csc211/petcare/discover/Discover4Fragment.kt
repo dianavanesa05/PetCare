@@ -33,7 +33,7 @@ class Discover4Fragment: Fragment() {
         }
 
         binding.mdaddcircle.setOnClickListener {
-            findNavController().navigate(R.id.action_Discovery4Fragment_to_Community4Fragment)
+            findNavController().navigate(R.id.action_Discovery4Fragment_to_Discover11Fragment)
         }
 
         binding.search.setOnClickListener{

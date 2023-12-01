@@ -19,6 +19,15 @@ class Discover12Fragment: Fragment() {
     ): View {
         _binding = FragmentDiscover12Binding.inflate(inflater, container, false)
         val view = binding.root
+
+        binding.close.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery12Fragment_to_Discover1Fragment)
+        }
+
+        binding.button.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery12Fragment_to_Discover13Fragment)
+        }
+
         return view
     }
 

@@ -19,6 +19,35 @@ class Discover9Fragment: Fragment() {
     ): View {
         _binding = FragmentDiscover9Binding.inflate(inflater, container, false)
         val view = binding.root
+
+        binding.segment1.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover9Fragment_to_homepage1Fragment)
+        }
+
+        binding.segment2.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover9Fragment_to_Discover1Fragment)
+        }
+
+        binding.mdaddcircle.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover9Fragment_to_Discover11Fragment)
+        }
+
+        binding.segment4.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover9Fragment_to_Community1Fragment)
+        }
+
+        binding.segment5.setOnClickListener{
+            findNavController().navigate(R.id.action_Discover9Fragment_to_profile1Fragment)
+        }
+
+        binding.arrowBack.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery9Fragment_to_Discover6Fragment)
+        }
+
+        binding.textField.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery9Fragment_to_Discover5Fragment)
+        }
+
         return view
     }
 

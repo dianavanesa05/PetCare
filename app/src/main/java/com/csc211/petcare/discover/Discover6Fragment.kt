@@ -19,6 +19,31 @@ class Discover6Fragment: Fragment() {
     ): View {
         _binding = FragmentDiscover6Binding.inflate(inflater, container, false)
         val view = binding.root
+
+        binding.expert.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover7Fragment)
+        }
+
+        binding.creator.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover8Fragment)
+        }
+
+        binding.arrowBack.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover5Fragment)
+        }
+
+        binding.examplesMe.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover5Fragment)
+        }
+
+        binding.videoCards1.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover9Fragment)
+        }
+
+        binding.videoCards3.setOnClickListener{
+            findNavController().navigate(R.id.action_Discovery6Fragment_to_Discover10Fragment)
+        }
+
         return view
     }
 
